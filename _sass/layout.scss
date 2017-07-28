@@ -1,0 +1,295 @@
+
+/*1200px 992px 768px 480px 320px*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
+
+* {
+  font-family: 'Open Sans';
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-links {
+    /* margin-right: 80px !important; */
+    /* height: 100%; */
+  text-align: center;
+  position: fixed/*absolute*/;
+  top: 38%;
+  left: -4px;
+  display: flex;
+  padding: 15px 20px;
+  background: black;
+  flex-direction: column;
+  margin-top: 0;
+  z-index: 70000;
+  opacity:0.9;
+}
+
+
+.social-media-icon {
+  cursor: pointer;
+  width: 16px;
+  margin-bottom:16px;
+  opacity: 0.85;
+}
+
+.social-media-icon:hover {
+  opacity:0.95;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+#mlh {
+  position: fixed;/*absolute;*/
+  top: -1px;
+  right: 15px;
+  z-index: 500001;
+  width: 70px;
+}
+
+#centerpiece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  background: rgba(16, 16, 16, 0.69);
+  margin-left:-5px;
+}
+
+
+#logo {
+  width: 412px;
+}
+
+#join {
+  width: 20%;
+  background: #282828;
+  /*margin: auto;*/
+  margin-top: 40px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  .go-button {
+    background: #232323;
+    border-color: #303030 !important;
+    span {
+      font-weight: bold;
+      color: rgb(105, 105, 105);
+      font-size: medium;
+    }
+    span:hover {
+      font-weight: bold;
+      color: rgb(72, 72, 72);
+      font-size: medium;
+    }
+  }
+  .text {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  background-color: darkred !important;
+  z-index:50000 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.main-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: -9999;
+  background: black;
+}
+
+.stretch {
+  height: 100%;
+  background: #1c1c1c;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  h1 {
+    padding: 20px;
+  }
+}
+
+
+.static:before {
+  background: #222;
+}
+
+.static {
+  background: #222;
+}
+
+.birds-bg {
+  background-image: url("/assets/images/foggy_birds_@2X.png");
+  background-repeat: repeat;
+  color: #333 !important;
+  * {
+    color: #333 !important;
+  }
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+@media (max-width : 1200px) {
+  #join {
+    width: 45%;
+  }
+}
+
+@media (max-width : 768px) {
+  #join {
+    width: 60%;
+  }
+}
+
+@media (max-width : 480px) {
+  #join {
+    width: 90%;
+  }
+  #logo {
+    width: 100%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 0px) {
+  .stretch {
+    margin-top: 100vh;
+  }
+  #centerpiece {
+    height: 100vh;
+  }
+  video {
+    width:auto;
+    height: 100vh;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+  .stretch {
+    margin-top: 91vh;
+  }
+  #centerpiece {
+    height: 91vh;
+  }
+  video {
+    width:100%;
+    height: 100%;
+  }
+
+  #join {
+    width: 400px;
+  }
+}
+
+@media(max-height: 560px){
+  #main-vid {
+    transform: scale(2);
+  }
+  .stretch {
+    margin-top: 600px;
+  }
+  #centerpiece {
+    height: 600px;
+  }
+  .social-media-links.side {
+    top: 95px;
+  }
+}
+
+footer {
+  background: black;
+  height: 400px;
+}
+
+.navbar-brand {
+  color: #fefefe !important;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right:20px;
+}
+
+#navbar-logo {
+  width:50px;
+  margin-right:10px;
+}
+
+@media (max-width : 768px) {
+  .social-media-links.side {
+    display: none;
+  }
+  #mlh {
+    display: none;
+  }
+}
+
+/*OVERRIDES*/
+
+.nav.navbar-nav li a {
+  color: #fefefe !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #dcdcdc !important;
+}
+
+.nav.navbar-nav .active a {
+  background-color: #942525 !important;
+}
+
+.navbar-default .navbar-toggle{
+  border-color: #7a0000 !important;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #920303 !important; 
+}
+
+.navbar-default .navbar-toggle:active {
+  background-color: #942525 !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #600d0d !important;
+}
+
+.navbar-collapse {
+  border-color: #600d0d !important;
+}
