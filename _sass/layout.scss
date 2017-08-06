@@ -7,7 +7,7 @@
   font-family: 'Open Sans';
   box-sizing: border-box;
   text-align: center;
-  color: #fff;
+  color: #ececec;//#fff;
 }
 
 html, body{
@@ -15,6 +15,7 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 p {
   font-size: 17px;
@@ -86,6 +87,12 @@ p {
   margin-top: 40px;
   padding: 15px 25px;
   border-radius: 5px;
+  padding-bottom:25px;
+  h4 {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bold;
+  }
   .go-button {
     background: #232323;
     border-color: #303030 !important;
@@ -103,6 +110,8 @@ p {
   .text {
     margin: 0;
     margin-bottom: 15px;
+    font-size:13px;
+    line-height: 1.5;
   }
 }
 
@@ -157,7 +166,7 @@ h1.thick-title {
 h1.thick-title.on-light{
   font-family: 'Archivo Black', sans-serif;
   font-size: 42px;
-  color: #1f1f1f !important;
+  color: #252525 !important;
 }
 
 .static:before {
@@ -327,4 +336,63 @@ footer {
 
 .navbar-collapse {
   border-color: #600d0d !important;
+}
+
+.card-header a {
+  color: #eee !important;
+  font-size: 20px !important;
+}
+
+.card-header a:hover {
+  color: white !important;
+  text-decoration : none !important;
+}
+
+.card-header a:active {
+  color: white !important;
+  text-decoration : none !important;
+}
+
+.card-header a:focus {
+  color: white !important;
+  text-decoration : none !important;
+}
+
+.faq .card {
+  margin-bottom: 1px;
+}
+
+.card-header {
+  background: #333;
+  border: 1px solid #222;
+}
+
+.card-header .mb-0 {
+  cursor: pointer;
+  margin : 0 !important;
+  padding: 11px;
+}
+
+.card-header .mb-0:hover {
+  color: #fff;
+}
+
+div.card-block {
+  padding: 20px 30px;
+  background: #444444;
+  border: 1px solid #222;
+  border-radius: 2px;
+}
+
+.card-header .mb-0 a:after {
+  content: "\25b6";
+  margin-right: 10px;
+  float: right;
+}
+
+.card-header .mb-0[aria-expanded="true"] a:after {
+  content: "\25bc";
+  font-size: 17px;
+  margin-right: 10px;
+  float: right;
 }
