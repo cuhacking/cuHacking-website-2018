@@ -338,6 +338,11 @@ footer {
   border-color: #600d0d !important;
 }
 
+/*--- FAQ ACCORDION ---*/
+#accordion {
+  width: 70%;
+  margin: auto;
+}
 .card-header a {
   color: #eee !important;
   font-size: 20px !important;
@@ -371,6 +376,7 @@ footer {
   cursor: pointer;
   margin : 0 !important;
   padding: 11px;
+  text-align: left;
 }
 
 .card-header .mb-0:hover {
