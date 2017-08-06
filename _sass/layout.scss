@@ -2,7 +2,7 @@
 /*1200px 992px 768px 480px 320px*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
-
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 * {
   font-family: 'Open Sans';
   box-sizing: border-box;
@@ -15,6 +15,9 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
+}
+p {
+  font-size: 17px;
 }
 
 .social-media-links {
@@ -64,7 +67,8 @@ html, body{
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: -23px;
+  min-width: 100vw !important;
   padding-top: 100px;
   background: rgba(16, 16, 16, 0.69);
   margin-left:-5px;
@@ -126,23 +130,11 @@ html, body{
 }
 
 .stretch {
-  height: 100%;
+  //height: 100%;
   background: #1c1c1c;
-  min-height: 100%;
+  //min-height: 100%;
   min-width: 100%;
   background-size: cover;
-  h1 {
-    padding: 20px;
-  }
-}
-
-
-.static:before {
-  background: #222;
-}
-
-.static {
-  background: #222;
 }
 
 .birds-bg {
@@ -154,16 +146,40 @@ html, body{
   }
 }
 
+
+h1.thick-title {
+  padding: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: bold;
+}
+
+h1.thick-title.on-light{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 42px;
+  color: #1f1f1f !important;
+}
+
+.static:before {
+  background: #222;
+}
+
+.static {
+  background: #222;
+}
+
+
 .parallax-bg {
   background-attachment: fixed;
 }
 
 .section {
   position: relative;
-  min-height: 100vh;
+  //min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   transform-style: inherit;
+  padding: 60px;
 }
 
 @media (max-width : 1200px) {
@@ -234,9 +250,28 @@ html, body{
   }
 }
 
+.stagger-sections {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .stagger-section {
+    width:50%;
+  }
+  .upper-stagger {
+
+  }
+  .lower-stagger {
+    margin-top : 50px;
+  }
+}
+
 footer {
+  #footer-logo {
+    width:134px;
+    margin-bottom:15px;
+  }
   background: black;
-  height: 400px;
+  padding: 40px 0px;
 }
 
 .navbar-brand {
