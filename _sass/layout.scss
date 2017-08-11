@@ -26,6 +26,12 @@ p {
   font-size: 17px;
 }
 
+.page-content {
+  min-height: 96vh;
+  padding: 50px;
+  background: #222;
+}
+
 .social-media-links {
     /* margin-right: 80px !important; */
     /* height: 100%; */
@@ -98,10 +104,31 @@ p {
     font-size: 16px;
     font-weight: bold;
   }
-  .go-button {
-    background: #232323;
-    border-color: #303030 !important;
-    span {
+
+  .pre-register {
+    width: 100% !important;
+    .form-group{
+      width: 100% !important;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      input[name="email"]{
+        width: 235px !important;
+        display: inline-block !important;
+      }
+      input[type="submit"] {
+        width: 55px;
+        height: 39px;
+        margin-left: -5px;
+        padding: 6px 12px;
+        background: #232323;
+        border-color: #303030 !important;
+        color: gainsboro;
+      }
+    }
+  }
+    /*span {
       font-weight: bold;
       color: rgb(105, 105, 105);
       font-size: medium;
@@ -110,8 +137,7 @@ p {
       font-weight: bold;
       color: rgb(72, 72, 72);
       font-size: medium;
-    }
-  }
+    }*/
   .text {
     margin: 0;
     margin-bottom: 15px;
@@ -152,6 +178,7 @@ p {
 }
 
 .birds-bg {
+  filter: brightness(86%);
   background-image: url("/assets/images/foggy_birds_@2X.png");
   background-repeat: repeat;
   color: #333 !important;
@@ -193,7 +220,7 @@ h1.thick-title.on-light{
   width: 100vw;
   box-sizing: border-box;
   transform-style: inherit;
-  padding: 60px;
+  padding: 80px 60px;
 }
 
 @media (max-width : 1200px) {
