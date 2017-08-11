@@ -1,0 +1,40 @@
+ 
+    <!--link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" /-->
+
+ 
+    <h4>We're currently planning CUHacking 2018!</h4>
+    <p class="text">Join the mailing list to stay up to date with all the <br>dates and details.</p>
+
+    <form id="pre-register-form" class="pre-register" method="post"> 
+      <div class="form-group">
+        <input name="email" type="email" class="form-control" placeholder="Email address" required>
+        <input type="submit" id="submit" name="send" class="submitBtn btn go-button btn btn-default" value="Join">
+      </div>
+    </form>
+
+    <script >
+    $('#pre-register-form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            url: "https://formspree.io/zhangweizhi@live.cn",
+            method: "POST",
+            data: $(this).serializeArray(),
+            dataType: "json",
+            beforeSend: function() {
+              $('#pre-register-form').append('<div class="alert alert--loading"> processing…</div>');
+            },
+            success: function(data) {
+              $('#pre-register-form').find('.alert--loading').hide();
+              $('#pre-register-form').append('<div class="alert alert--success">You are in our Email list!</div>');
+            },
+            error: function(err) {
+              $('#pre-register-form').find('.alert--loading').hide();
+              $('#pre-register-form').append('<div class="alert alert--error">Oops, there was an error.</div>');
+            }
+        });
+      });
+
+    </script>
+    
+

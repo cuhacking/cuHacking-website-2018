@@ -17,8 +17,19 @@ html, body{
   padding: 0;
   line-height: 1.5;
 }
+
+body {
+ overflow-x: hidden;
+}
+
 p {
   font-size: 17px;
+}
+
+.page-content {
+  min-height: 96vh;
+  padding: 50px;
+  background: #222;
 }
 
 .social-media-links {
@@ -56,7 +67,7 @@ p {
 #mlh {
   position: fixed;/*absolute;*/
   top: -1px;
-  right: 15px;
+  right: 75px;
   z-index: 500001;
   width: 70px;
 }
@@ -68,7 +79,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  right: -23px;
+  right: 0;
   min-width: 100vw !important;
   padding-top: 100px;
   background: rgba(16, 16, 16, 0.69);
@@ -93,10 +104,31 @@ p {
     font-size: 16px;
     font-weight: bold;
   }
-  .go-button {
-    background: #232323;
-    border-color: #303030 !important;
-    span {
+
+  .pre-register {
+    width: 100% !important;
+    .form-group{
+      width: 100% !important;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      input[name="email"]{
+        width: 235px !important;
+        display: inline-block !important;
+      }
+      input[type="submit"] {
+        width: 55px;
+        height: 39px;
+        margin-left: -5px;
+        padding: 6px 12px;
+        background: #232323;
+        border-color: #303030 !important;
+        color: gainsboro;
+      }
+    }
+  }
+    /*span {
       font-weight: bold;
       color: rgb(105, 105, 105);
       font-size: medium;
@@ -105,8 +137,7 @@ p {
       font-weight: bold;
       color: rgb(72, 72, 72);
       font-size: medium;
-    }
-  }
+    }*/
   .text {
     margin: 0;
     margin-bottom: 15px;
@@ -147,6 +178,7 @@ p {
 }
 
 .birds-bg {
+  filter: brightness(86%);
   background-image: url("/assets/images/foggy_birds_@2X.png");
   background-repeat: repeat;
   color: #333 !important;
@@ -188,7 +220,7 @@ h1.thick-title.on-light{
   width: 100vw;
   box-sizing: border-box;
   transform-style: inherit;
-  padding: 60px;
+  padding: 80px 60px;
 }
 
 @media (max-width : 1200px) {
@@ -259,6 +291,12 @@ h1.thick-title.on-light{
   }
 }
 
+@media(min-height: 1360px){
+  .stretch {
+    margin-top: 650px;
+  }
+}
+
 .stagger-sections {
   display:flex;
   flex-wrap: wrap;
@@ -275,12 +313,26 @@ h1.thick-title.on-light{
 }
 
 footer {
-  #footer-logo {
+  .footer-logo {
     width:134px;
     margin-bottom:15px;
   }
   background: black;
   padding: 40px 0px;
+  .organizers {
+    border-top: 1px solid #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    margin-top: 40px;
+    .ieee-logo-footer {
+      width: 100px;
+    }
+  }
 }
 
 .navbar-brand {
@@ -343,6 +395,13 @@ footer {
   width: 70%;
   margin: auto;
 }
+@media (max-width : 768px) {
+  #accordion {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 .card-header a {
   color: #eee !important;
   font-size: 20px !important;
@@ -388,6 +447,10 @@ div.card-block {
   background: #444444;
   border: 1px solid #222;
   border-radius: 2px;
+}
+
+.card-header .mb-0 a {
+  max-width:98%;
 }
 
 .card-header .mb-0 a:after {
