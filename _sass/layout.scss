@@ -2,12 +2,12 @@
 /*1200px 992px 768px 480px 320px*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
-
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 * {
   font-family: 'Open Sans';
   box-sizing: border-box;
   text-align: center;
-  color: #fff;
+  color: #ececec;//#fff;
 }
 
 html, body{
@@ -15,6 +15,15 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+body {
+ overflow-x: hidden;
+}
+
+p {
+  font-size: 17px;
 }
 
 .social-media-links {
@@ -52,7 +61,7 @@ html, body{
 #mlh {
   position: fixed;/*absolute;*/
   top: -1px;
-  right: 15px;
+  right: 75px;
   z-index: 500001;
   width: 70px;
 }
@@ -65,6 +74,7 @@ html, body{
   top: 0;
   left: 0;
   right: 0;
+  min-width: 100vw !important;
   padding-top: 100px;
   background: rgba(16, 16, 16, 0.69);
   margin-left:-5px;
@@ -82,6 +92,12 @@ html, body{
   margin-top: 40px;
   padding: 15px 25px;
   border-radius: 5px;
+  padding-bottom:25px;
+  h4 {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bold;
+  }
   .go-button {
     background: #232323;
     border-color: #303030 !important;
@@ -99,6 +115,8 @@ html, body{
   .text {
     margin: 0;
     margin-bottom: 15px;
+    font-size:13px;
+    line-height: 1.5;
   }
 }
 
@@ -126,23 +144,11 @@ html, body{
 }
 
 .stretch {
-  height: 100%;
+  //height: 100%;
   background: #1c1c1c;
-  min-height: 100%;
+  //min-height: 100%;
   min-width: 100%;
   background-size: cover;
-  h1 {
-    padding: 20px;
-  }
-}
-
-
-.static:before {
-  background: #222;
-}
-
-.static {
-  background: #222;
 }
 
 .birds-bg {
@@ -154,16 +160,40 @@ html, body{
   }
 }
 
+
+h1.thick-title {
+  padding: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: bold;
+}
+
+h1.thick-title.on-light{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 42px;
+  color: #252525 !important;
+}
+
+.static:before {
+  background: #222;
+}
+
+.static {
+  background: #222;
+}
+
+
 .parallax-bg {
   background-attachment: fixed;
 }
 
 .section {
   position: relative;
-  min-height: 100vh;
+  //min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   transform-style: inherit;
+  padding: 60px;
 }
 
 @media (max-width : 1200px) {
@@ -234,9 +264,48 @@ html, body{
   }
 }
 
+@media(min-height: 1360px){
+  .stretch {
+    margin-top: 650px;
+  }
+}
+
+.stagger-sections {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .stagger-section {
+    width:50%;
+  }
+  .upper-stagger {
+
+  }
+  .lower-stagger {
+    margin-top : 50px;
+  }
+}
+
 footer {
+  .footer-logo {
+    width:134px;
+    margin-bottom:15px;
+  }
   background: black;
-  height: 400px;
+  padding: 40px 0px;
+  .organizers {
+    border-top: 1px solid #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    margin-top: 40px;
+    .ieee-logo-footer {
+      width: 100px;
+    }
+  }
 }
 
 .navbar-brand {
@@ -292,4 +361,80 @@ footer {
 
 .navbar-collapse {
   border-color: #600d0d !important;
+}
+
+/*--- FAQ ACCORDION ---*/
+#accordion {
+  width: 70%;
+  margin: auto;
+}
+@media (max-width : 768px) {
+  #accordion {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.card-header a {
+  color: #eee !important;
+  font-size: 20px !important;
+}
+
+.card-header a:hover {
+  color: white !important;
+  text-decoration : none !important;
+}
+
+.card-header a:active {
+  color: white !important;
+  text-decoration : none !important;
+}
+
+.card-header a:focus {
+  color: white !important;
+  text-decoration : none !important;
+}
+
+.faq .card {
+  margin-bottom: 1px;
+}
+
+.card-header {
+  background: #333;
+  border: 1px solid #222;
+}
+
+.card-header .mb-0 {
+  cursor: pointer;
+  margin : 0 !important;
+  padding: 11px;
+  text-align: left;
+}
+
+.card-header .mb-0:hover {
+  color: #fff;
+}
+
+div.card-block {
+  padding: 20px 30px;
+  background: #444444;
+  border: 1px solid #222;
+  border-radius: 2px;
+}
+
+.card-header .mb-0 a {
+  max-width:98%;
+}
+
+.card-header .mb-0 a:after {
+  content: "\25b6";
+  margin-right: 10px;
+  float: right;
+}
+
+.card-header .mb-0[aria-expanded="true"] a:after {
+  content: "\25bc";
+  font-size: 17px;
+  margin-right: 10px;
+  float: right;
 }
