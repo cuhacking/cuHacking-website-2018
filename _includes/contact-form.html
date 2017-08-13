@@ -1,6 +1,40 @@
-<form action="https://formspree.io/brittny.lapierre@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+<form id="contact-form" method="POST">
+    <!--input type="text" name="name">
+    <input type="email" name="_replyto"-->
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon">Name</span>
+            <input name="form-name-input" type="text" name="name" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Email</span>
+            <input name="form-email-input" type="email" name="_replyto" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Subject</span>
+            <input name="form-subject-input" type="text" name="subject" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Description</span>
+            <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+       </div>
+                    
+	    <input id="contact-button" type="submit" value="Send">
+	</div>
 </form>
+
+<script>
+var message = "";
+
+$("#contact-button").on("click", function() {
+    message = $("#contact-form").serialize();
+    $.ajax({
+        url: "//formspree.io/brittny.lapierre@gmail.com", 
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('Thanks for the email, we\'ll be in touch!');
+    return false;
+});
+</script>

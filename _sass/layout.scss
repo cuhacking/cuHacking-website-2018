@@ -26,6 +26,18 @@ p {
   font-size: 17px;
 }
 
+a {
+  color: #d90000 !important;
+}
+
+a:hover {
+  color: red !important;
+}
+
+a:active, a:focus {
+  color: darkred !important;
+}
+
 .page-content {
   min-height: 96vh;
   padding: 50px;
