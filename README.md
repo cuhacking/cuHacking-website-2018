@@ -7,7 +7,7 @@ To preview:
 
 2) After installing ruby install a gem called bundler using the following command: 'gem install bundler'
 
-3) Clone the repo, cd into it and run the command 'bundle install'
+3) Clone the repo, cd into it, and run the command 'bundle install'
 
 4) Run the command 'bundle exec jekyll serve'
 
