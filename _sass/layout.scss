@@ -84,7 +84,7 @@ p {
   right: 0;
   min-width: 100vw !important;
   padding-top: 100px;
-  background: rgba(16, 16, 16, 0.69);
+  background: rgba(16, 16, 16, 0.70);
   margin-left:-5px;
 }
 
@@ -162,13 +162,7 @@ p {
   background: black;
 }
 
-.stretch {
-  //height: 100%;
-  background: #040404;
-  //min-height: 100%;
-  min-width: 100%;
-  background-size: cover;
-}
+
 
 .lighter-section {
   background: #281e1e;
@@ -220,6 +214,11 @@ h1.thick-title.on-light{
   box-sizing: border-box;
   transform-style: inherit;
   padding: 80px 60px;
+  background: #1b1a1a;
+}
+
+.dark {
+  background: #0c0b0b;
 }
 
 @media (max-width : 1200px) {
@@ -386,7 +385,7 @@ footer {
 }
 
 .nav.navbar-nav .active a {
-  background-color: rgba(71, 71, 71, 0.17) !important;
+  background-color: #1b1a1a !important;//rgba(71, 71, 71, 0.17) !important;
   border-bottom: 2px solid #820000;
 }
 
