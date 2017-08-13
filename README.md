@@ -3,7 +3,7 @@ CUHacking Website
 
 To preview:
 
-1) Install ruby 2.2 and above
+1) Install ruby 2.2 or above
 
 2) After installing ruby install a gem called bundler using the following command: 'gem install bundler'
 
