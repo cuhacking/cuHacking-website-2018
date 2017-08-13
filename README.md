@@ -1,14 +1,16 @@
 # website
 CUHacking Website
 
-To preview, install ruby 2.2 and above
+To preview:
 
-After installing ruby install a gem called bundler using: gem install bundler
+1) Install ruby 2.2 and above
 
-Clone the repo, cd into it and run 'bundle install'
+2) After installing ruby install a gem called bundler using the following command: 'gem install bundler'
 
-Run 'bundle exec jekyll serve'
+3) Clone the repo, cd into it and run the command 'bundle install'
 
-Then in your prowser navigate to localhost:4000 to see the site.
+4) Run the command 'bundle exec jekyll serve'
+
+5) Then in your prowser navigate to localhost:4000 to see the site.
 
 Refresh the site to see your changes.
