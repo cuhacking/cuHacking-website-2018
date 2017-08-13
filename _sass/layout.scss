@@ -217,7 +217,7 @@ h1.thick-title.on-light{
 .section {
   position: relative;
   //min-height: 100vh;
-  width: 100vw;
+  min-width: 100%;
   box-sizing: border-box;
   transform-style: inherit;
   padding: 80px 60px;
