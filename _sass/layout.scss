@@ -247,7 +247,7 @@ h1.thick-title.on-light{
 /* Medium Devices, Desktops */
 @media (min-width : 0px) {
   .stretch {
-    margin-top: 100vh;
+    //margin-top: 100vh;
   }
   #centerpiece {
     height: 100vh;
@@ -261,7 +261,7 @@ h1.thick-title.on-light{
 /* Large Devices, Wide Screens */
 @media (min-width : 1200px) {
   .stretch {
-    margin-top: 91vh;
+    //margin-top: 91vh;
   }
   #centerpiece {
     height: 91vh;
@@ -281,7 +281,7 @@ h1.thick-title.on-light{
     transform: scale(2);
   }
   .stretch {
-    margin-top: 600px;
+    //margin-top: 600px;
   }
   #centerpiece {
     height: 600px;
@@ -293,7 +293,7 @@ h1.thick-title.on-light{
 
 @media(min-height: 1360px){
   .stretch {
-    margin-top: 650px;
+    //margin-top: 650px;
   }
 }
 
