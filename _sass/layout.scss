@@ -36,16 +36,18 @@ p {
     /* margin-right: 80px !important; */
     /* height: 100%; */
   text-align: center;
-  position: fixed/*absolute*/;
+  position: fixed;///*absolute*/;
   top: 38%;
   left: -4px;
   display: flex;
   padding: 15px 20px;
-  background: black;
+  background: rgba(35, 32, 32, 0.74);
   flex-direction: column;
   margin-top: 0;
   z-index: 70000;
-  opacity:0.9;
+  img {
+    opacity:0.9;
+  }
 }
 
 
@@ -89,16 +91,18 @@ p {
 
 #logo {
   width: 412px;
+  margin-left: -20px;
 }
 
 #join {
   width: 20%;
-  background: #282828;
+  background: rgba(35, 32, 32, 0.74); //rgba(45, 40, 40, 0.5);
   /*margin: auto;*/
   margin-top: 40px;
   padding: 15px 25px;
   border-radius: 5px;
   padding-bottom:25px;
+  margin-left: -20px;
   h4 {
     line-height: 1.5;
     font-size: 16px;
@@ -119,11 +123,11 @@ p {
       }
       input[type="submit"] {
         width: 55px;
-        height: 39px;
+        height: 37px;
         margin-left: -5px;
         padding: 6px 12px;
         background: #232323;
-        border-color: #5a5a5a !important;
+        border-color: transparent;
         color: gainsboro;
       }
     }
@@ -146,17 +150,6 @@ p {
   }
 }
 
-#menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left:0;
-  background-color: darkred !important;
-  z-index:50000 !important;
-  border-radius: 0 !important;
-  border: none !important;
-}
-
 .main-wrapper {
   position: fixed;
   bottom: 0;
@@ -171,20 +164,26 @@ p {
 
 .stretch {
   //height: 100%;
-  background: #1c1c1c;
+  background: #040404;
   //min-height: 100%;
   min-width: 100%;
   background-size: cover;
 }
 
-.birds-bg {
-  filter: brightness(86%);
-  background-image: url("/assets/images/foggy_birds_@2X.png");
+.lighter-section {
+  background: #281e1e;
+}
+
+.ps-bg {
+  background-image: url("/assets/images/playstation-pattern_dark.png");
   background-repeat: repeat;
-  color: #333 !important;
-  * {
-    color: #333 !important;
-  }
+  filter: brightness(86%);
+}
+
+.birds-bg {
+  //filter: brightness(86%);
+  background-image: url("/assets/images/foggy_birds_@2X.svg");
+  background-repeat: repeat;
 }
 
 
@@ -198,15 +197,15 @@ h1.thick-title {
 h1.thick-title.on-light{
   font-family: 'Archivo Black', sans-serif;
   font-size: 42px;
-  color: #252525 !important;
+  color: #fff !important;
 }
 
 .static:before {
-  background: #222;
+  background: #1e1919;
 }
 
 .static {
-  background: #222;
+  background: #1e1919;
 }
 
 
@@ -272,7 +271,7 @@ h1.thick-title.on-light{
   }
 
   #join {
-    width: 400px;
+    width: 385px;
   }
 }
 
@@ -320,17 +319,23 @@ footer {
   background: black;
   padding: 40px 0px;
   .organizers {
-    border-top: 1px solid #333;
+    border-top: 1px solid #1b1515;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    //flex-direction: column;
     flex-wrap: wrap;
     width:100%;
     margin-top: 40px;
+    h5 {
+      width: 100%;
+    }
     .ieee-logo-footer {
       width: 100px;
+    }
+    img {
+      margin-right:20px;
     }
   }
 }
@@ -357,10 +362,23 @@ footer {
   }
 }
 
+
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  background-color: #0e0e0e !important;
+  z-index:50000 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
 /*OVERRIDES*/
 
 .nav.navbar-nav li a {
-  color: #fefefe !important;
+  color: gainsboro !important;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -368,29 +386,30 @@ footer {
 }
 
 .nav.navbar-nav .active a {
-  background-color: #942525 !important;
+  background-color: rgba(71, 71, 71, 0.17) !important;
+  border-bottom: 2px solid #820000;
 }
 
 .navbar-default .navbar-toggle{
-  border-color: #7a0000 !important;
+  border-color: rgba(255, 255, 255, 0.04) !important;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: #920303 !important; 
+  background-color: rgba(148, 37, 37, 0.17) !important;
 }
 
 .navbar-default .navbar-toggle:active {
-  background-color: #942525 !important;
+  background-color: rgba(148, 37, 37, 0.17) !important;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #600d0d !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .navbar-collapse {
-  border-color: #600d0d !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
-/*--- FAQ ACCORDION ---*/
+/*--- ACCORDION ---*/
 #accordion {
   width: 70%;
   margin: auto;

@@ -2,6 +2,7 @@
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
+  margin-left: -20px;
 }
 .timeline:before {
   top: 0;
@@ -9,7 +10,7 @@
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #979797;
+  background-color: #564a4a;
   left: 25px;
   margin-right: -1.5px;
 }
@@ -36,7 +37,7 @@
 .timeline > li > .timeline-panel {
   width: calc( 100% - 75px );
   float: right;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #564a4a;
   border-radius: 2px;
   padding: 20px;
   position: relative;
@@ -49,8 +50,8 @@
   left: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-right: 15px solid #ccc;
-  border-left: 0 solid #ccc;
+  border-right: 15px solid #564a4a;
+  border-left: 0 solid #564a4a;
   border-bottom: 15px solid transparent;
   content: " ";
 }
@@ -60,8 +61,8 @@
   left: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-right: 14px solid #222;
-  border-left: 0 solid #fff;
+  border-right: 14px solid #1e1919;
+  border-left: 0 solid #564a4a;
   border-bottom: 14px solid transparent;
   content: " ";
 }
@@ -76,7 +77,7 @@
   top: 16px;
   left: 0px;
   margin-right: -25px;
-  background-color: #616161;
+  background-color: #2b2424;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -135,9 +136,9 @@
 }
 
 .timeline .timeline-panel:hover {
-  background-color:#333;
+  background-color:#251e1e;
 }
 
 .timeline-panel:hover:after {
-  border-right: 14px solid #333 !important;
+  border-right: 14px solid #251e1e !important;
 }
