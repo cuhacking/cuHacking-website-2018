@@ -4,19 +4,19 @@
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon">Name</span>
-            <input name="form-name-input" type="text" name="name" class="form-control" required>
+            <input name="name" type="text" placeholder="name" class="form-control" required>
         </div>
         <div class="input-group">
             <span class="input-group-addon">Email</span>
-            <input name="form-email-input" type="email" name="_replyto" class="form-control" required>
+            <input name="email" type="email" placeholder="email" class="form-control" required>
         </div>
         <div class="input-group">
             <span class="input-group-addon">Subject</span>
-            <input name="form-subject-input" type="text" name="subject" class="form-control" required>
+            <input name="subject" placeholder="name" type="text" name="subject" class="form-control" required>
         </div>
         <div class="input-group">
             <span class="input-group-addon">Description</span>
-            <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+            <textarea name="description" name="description" placeholder="Your message..." class="form-control" rows="4" cols="60" required></textarea>
        </div>
                     
 	    <input id="contact-button" type="submit" value="Send">
@@ -24,17 +24,25 @@
 </form>
 
 <script>
-var message = "";
-
-$("#contact-button").on("click", function() {
-    message = $("#contact-form").serialize();
+var $contactForm = $("#contact-form");
+$contactForm.submit(function(e) {
+    e.preventDefault();
     $.ajax({
-        url: "//formspree.io/brittny.lapierre@gmail.com", 
-        method: "POST",
-        data: {message: message},
-        dataType: "json"
+        url: "//formspree.io/cuhackingteam@gmail.com", 
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function() {
+            $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+        },
+        success: function(data) {
+            $contactForm.find('.alert--loading').hide();
+            $contactForm.append('<div class="alert alert--success"> <i style="margin-right:5px;" class="fa fa-smile-o" aria-hidden="true"></i> Message sent!</div>');
+        },
+        error: function(err) {
+            $contactForm.find('.alert--loading').hide();
+            $contactForm.append('<div class="alert alert--error"><i style="margin-right:5px;" class="fa fa-frown-o" aria-hidden="true"></i> Oops, there was an error.</div>');
+        }
     });
-    alert('Thanks for the email, we\'ll be in touch!');
-    return false;
 });
 </script>

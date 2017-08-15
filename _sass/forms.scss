@@ -1,5 +1,5 @@
 #contact-form {
-	width:90%;
+	width:80%;
 	margin:auto;
 	.input-group {
 		margin-bottom: 15px
@@ -29,6 +29,10 @@
 }
 
 .input-group-addon {
-    min-width: 150px !important;
+    min-width: 100px !important;
+    text-align: left;
 }
 
+.form-control {  
+    text-align: left;
+}

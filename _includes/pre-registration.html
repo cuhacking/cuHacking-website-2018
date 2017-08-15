@@ -17,7 +17,7 @@
     $('#pre-register-form').submit(function(e){
         e.preventDefault();
         $.ajax({
-            url: "https://formspree.io/brittny.lapierre@gmail.com",
+            url: "https://formspree.io/cuhackingteam@gmail.com",
             method: "POST",
             data: $(this).serializeArray(),
             dataType: "json",
@@ -26,11 +26,11 @@
             },
             success: function(data) {
               $('#pre-register-form').find('.alert--loading').hide();
-              $('#pre-register-form').append('<div class="alert alert--success">You are in our Email list!</div>');
+              $('#pre-register-form').append('<div class="alert alert--success"><i style="margin-right:5px;" class="fa fa-smile-o" aria-hidden="true"></i> You are in our Email list!</div>');
             },
             error: function(err) {
               $('#pre-register-form').find('.alert--loading').hide();
-              $('#pre-register-form').append('<div class="alert alert--error">Oops, there was an error.</div>');
+              $('#pre-register-form').append('<div class="alert alert--error"><i style="margin-right:5px;" class="fa fa-frown-o" aria-hidden="true"></i> Oops, there was an error.</div>');
             }
         });
       });
