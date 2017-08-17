@@ -9,9 +9,15 @@ canvas {
   width: 100%;
   height: 90vh;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#993b3b+0,3f1e1e+0,3f1e1e+0,3f1e1e+10,3f1e1e+25,3f1e1e+42,260000+77,000000+100 */
-background: #993b3b; /* Old browsers */
-background: -moz-linear-gradient(top,  #993b3b 0%, #3f1e1e 0%, #3f1e1e 0%, #3f1e1e 10%, #3f1e1e 25%, #3f1e1e 42%, #260000 77%, #000000 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #993b3b 0%,#3f1e1e 0%,#3f1e1e 0%,#3f1e1e 10%,#3f1e1e 25%,#3f1e1e 42%,#260000 77%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #993b3b 0%,#3f1e1e 0%,#3f1e1e 0%,#3f1e1e 10%,#3f1e1e 25%,#3f1e1e 42%,#260000 77%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#993b3b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	background: #993b3b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #993b3b 0%, #3f1e1e 0%, #3f1e1e 0%, #3f1e1e 10%, #3f1e1e 25%, #3f1e1e 42%, #260000 77%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #993b3b 0%,#3f1e1e 0%,#3f1e1e 0%,#3f1e1e 10%,#3f1e1e 25%,#3f1e1e 42%,#260000 77%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #993b3b 0%,#3f1e1e 0%,#3f1e1e 0%,#3f1e1e 10%,#3f1e1e 25%,#3f1e1e 42%,#260000 77%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#993b3b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width:560px) {
+	.particles-js {
+	  height: 98vh;
+	}
 }

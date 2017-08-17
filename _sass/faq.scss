@@ -122,6 +122,9 @@
   color: inherit;
   font-weight: bold;
 }
+.timeline-body > p {
+  margin-top: 20px;
+}
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
@@ -145,4 +148,10 @@
 
 .timeline-panel:hover:after {
   border-right: 14px solid #232020 !important;
+}
+
+@media (min-width:768px){
+ .timeline-title {
+      margin-left: -65px;
+ }
 }
