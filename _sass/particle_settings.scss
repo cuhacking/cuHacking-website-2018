@@ -16,8 +16,29 @@ canvas {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#993b3b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-@media (max-width:560px) {
+/* Medium Devices, Desktops */
+@media (min-width : 0px) {
+  .particles-js {
+    height: 100vh;
+  }
+}
+
+/* Ipads devices */
+@media (min-height : 1024px) {
+  .particles-js {
+    height: 60vh;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+  .particles-js {
+    height: 91vh;
+  }
+}
+
+@media (max-height: 560px){
 	.particles-js {
-	  height: 98vh;
+	    height: 650px;
 	}
 }

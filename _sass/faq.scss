@@ -3,6 +3,7 @@
   padding: 20px 0 20px;
   position: relative;
   margin-left: -20px;
+  max-width: 90vw;
 }
 .timeline:before {
   top: 0;
@@ -154,4 +155,19 @@
  .timeline-title {
       margin-left: -65px;
  }
+}
+
+@media (max-width:767px){
+  .timeline:before {
+    display: none;
+  }
+
+  .timeline > li > .timeline-badge {
+    display: none;
+  }
+
+  .timeline > li > .timeline-panel {
+    width: 100%;
+  }
+
 }
