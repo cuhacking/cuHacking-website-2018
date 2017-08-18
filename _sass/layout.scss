@@ -252,6 +252,12 @@ h1.thick-title.on-light{
   color: #d6d6d6;
 }
 
+@media (max-width: 768px){
+  .section {
+    padding: 60px 60px;
+  }
+}
+
 .dark {
   background: #0c0b0b;
 }
