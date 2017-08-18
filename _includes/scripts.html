@@ -7,3 +7,14 @@
 
 <!--FAQ-->
 <script src="{{ site.baseurl }}/assets/js/faq.js"></script>
+
+<!--Scroll loading-->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+	// Changing the defaults
+	window.sr = ScrollReveal({ reset: true }); //
+	sr.reveal('.reveal-full-size', { reset: false, scale: 1,duration: 1000 });
+	// Customizing a reveal set
+	sr.reveal('.reveal', { duration: 1500 });
+</script>
