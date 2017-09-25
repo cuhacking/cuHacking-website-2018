@@ -16,3 +16,10 @@
 	background: rgba(32, 32, 32, 0.74);
 	border-radius: 5px;
 }
+
+@media (max-width:600px) {
+	.contact-form {
+		padding: 20px;
+	    padding-bottom: 80px;
+	}
+}

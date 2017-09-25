@@ -26,14 +26,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7464', end
 /* Medium Devices, Desktops */
 @media (min-width : 0px) {
   .particles-js {
-    height: 100vh;
+    height: 114vh;
   }
 }
-
 /* Ipads devices */
 @media (min-height : 1024px) {
   .particles-js {
-    height: 60vh;
+    height: 72vh;
   }
 }
 
@@ -46,6 +45,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7464', end
 
 @media (max-height: 560px){
 	.particles-js {
-	    height: 650px;
+	    height: 750px;
 	}
 }

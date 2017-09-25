@@ -119,12 +119,6 @@ a:active, a:focus {
   }
 }
 
-@media (max-width: 500px)
-  .section {
-      padding: 60px 0px;
-  }
-}
-
 #logo {
   width: 485px;//412px;
   opacity: 0.83;
@@ -279,6 +273,12 @@ h1.thick-title.on-light{
   }
 }
 
+@media (max-width: 500px) {
+  .section {
+      padding: 60px 0px;
+  }
+}
+
 .dark {
   background: #0c0b0b;
 }
@@ -316,14 +316,14 @@ h1.thick-title.on-light{
 /* Small Devices */
 @media (min-width : 0px) {
   #centerpiece {
-    height: 100vh;
+    height: 114vh;
   }
 }
 
 /* Ipads devices */
 @media (min-height : 1024px) {
   #centerpiece {
-    height: 60vh;
+    height: 72vh;
   }
 
   #join {
@@ -344,7 +344,7 @@ h1.thick-title.on-light{
 
 @media(max-height: 560px){
   #centerpiece {
-    height: 650px;
+    height: 750px;
   }
   .social-media-links.side {
     top: 95px;
