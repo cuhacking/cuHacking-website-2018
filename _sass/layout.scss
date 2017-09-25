@@ -119,6 +119,12 @@ a:active, a:focus {
   }
 }
 
+@media (max-width: 500px)
+  .section {
+      padding: 60px 0px;
+  }
+}
+
 #logo {
   width: 485px;//412px;
   opacity: 0.83;
