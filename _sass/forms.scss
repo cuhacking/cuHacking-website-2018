@@ -35,22 +35,31 @@
     color: gainsboro;
     border-radius: 0px !important;
 }
-input, textarea {
+.form-control {
     border-radius: 0px !important;
     min-height: 40px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
     text-align: left;
+    min-width:200px;
 }
 
 input[type="submit"] { 
     background: #302323;
     border-color: transparent;
-    color: gainsboro;
+    color: gainsboro;    
+    min-height: 40px;
+    border-radius: 0px !important;
 }
 
 .form-control {  
     text-align: left;
 }
+
+@media (max-width:600px){
+    .input-group {
+        display: block;
+    }
+} 
 

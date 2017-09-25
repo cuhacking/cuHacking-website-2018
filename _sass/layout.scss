@@ -113,6 +113,12 @@ a:active, a:focus {
  }
 }
 
+@media (max-width:768px){
+  #logo {
+    margin-top: 40px;
+  }
+}
+
 #logo {
   width: 485px;//412px;
   opacity: 0.83;
