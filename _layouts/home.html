@@ -2,10 +2,10 @@
 layout: main_template
 ---
 {% include mlh.html %}
-{% include video_bg.html %}
-<div id="centerpiece" class="reveal-full-size">
-	<img id="logo" src="{{ site.baseurl }}/assets/images/cuhlogo.png"></img>
-	<div id="join">
+{% include particle_bg.html %}
+<div id="centerpiece">
+	<img id="logo" class="reveal-full-size"src="{{ site.baseurl }}/assets/images/cuhlogo.png"></img>
+	<div id="join" class="reveal-full-size">
 	      {% include pre-registration.html %}
 	      <!--input type="text" class="form-control" placeholder="email">
 	      <span class="input-group-btn">
@@ -20,7 +20,7 @@ layout: main_template
     	<p class="reveal">Carleton University's CUHacking is the largest hackathon in Ottawa. The hackathon takes place over 24 hours (non-stop!) Students can compete against each other and themselves to take thier projects from concept to reality.</p>
 	</div>
 </div>
-<div class="section parallax-bg static-nodes-bg"> <!--parallax-bg birds-bg -->
+<div class="section red "> <!--parallax-bg static-nodes-bg-->
 	<div class="container">
 		<h1 class="thick-title reveal">SPONSORS</h1>
 		
@@ -33,7 +33,7 @@ layout: main_template
 		<!-- include sponsor grid -->
 	</div>
 </div>
-<div class="section dark">
+<div class="section med parallax-bg static-nodes-bg">
 	{% include faq.html %}
 </div>
 

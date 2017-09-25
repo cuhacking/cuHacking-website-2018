@@ -1,14 +1,23 @@
 ---
-layout: default
+layout: main_template
 permalink: contact/
 ---
 
-<div class="container">
-	<h1 class="contact-title">Contact Us</h1>
-	<p class="contact-subtitle">Have a question? Use the form below and we'll get back to you ASAP.</p>
-	{% include contact-form.html %}
+{% include particle_bg.html %}
+
+<div id="centerpiece">
+	<div class="container">
+		<h1 class="contact-title"><i class="fa fa-envelope-o" aria-hidden="true" style="margin-right:15px"></i>Contact Us</h1>
+		<p class="contact-subtitle">Have a question? Use the form below and we'll get back to you ASAP.</p>
+		{% include contact-form.html %}
+	</div>
 </div>
 
 <script type="text/javascript">
 	$("#contact-nav").addClass("active");
 </script>
+
+<!--Particle js-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!--Particle js-->
+<script src="{{ site.baseurl }}/assets/js/particles_settings.js"></script>

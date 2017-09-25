@@ -7,12 +7,11 @@
 }
 #contact-button {
 	float: right;
-	background: black;
+    background: #302323;
     border: none;
     padding: 10px 20px;
     position: relative;
     display: block;
-    margin: 30px auto;
     /* padding: 0; */
     overflow: hidden;
     border-width: 0;
@@ -25,14 +24,33 @@
 }
 
 #contact-button:hover {
-	background: #222;
+	background: #493636;
 }
 
 .input-group-addon {
     min-width: 100px !important;
     text-align: left;
+    background: #302323;
+    border-color: transparent;
+    color: gainsboro;
+    border-radius: 0px !important;
+}
+input, textarea {
+    border-radius: 0px !important;
+    min-height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: left;
+}
+
+input[type="submit"] { 
+    background: #302323;
+    border-color: transparent;
+    color: gainsboro;
 }
 
 .form-control {  
     text-align: left;
 }
+

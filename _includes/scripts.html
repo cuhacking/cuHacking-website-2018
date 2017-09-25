@@ -14,7 +14,40 @@
 <script>
 	// Changing the defaults
 	window.sr = ScrollReveal({ reset: true }); //
-	sr.reveal('.reveal-full-size', { reset: false, scale: 1,duration: 1000 });
+	sr.reveal('.reveal-full-size', { reset: false, scale: 1,duration: 600 });
 	// Customizing a reveal set
-	sr.reveal('.reveal', { reset: false, duration: 1200 });
+	sr.reveal('.reveal', { reset: false, duration: 500 });
+
+
+	//On scroll check if change bg
+	//.nav.navbar-nav .active a 'background-color', 'rgba(14, 14, 14, 0.0)'
+	//background-color: rgba(14, 14, 14, 0.0) !important; #menu
+	var nav = document.getElementById( "menu" );
+	var centerpeice = document.getElementById( "centerpiece" );
+
+	$(document).ready(function() {
+		checkNavOverCenter();
+	});
+
+	$(window).scroll(checkNavOverCenter);
+
+	function checkNavOverCenter(){
+		if(checkOverlappingY(nav, centerpeice)){
+			$("#menu").addClass('transparent');
+			//$(".nav.navbar-nav .active a").addClass('transparent');
+		} else {
+			$("#menu").removeClass('transparent');
+			//$(".nav.navbar-nav .active a").removeClass('transparent');
+		}
+	}
+
+	function checkOverlappingY(el1, el2) { //found on tutorial
+		var rect1 = el1.getBoundingClientRect();
+		var rect2 = el2.getBoundingClientRect();
+
+		return (
+		  ((rect2.top <= rect1.top) && (rect1.top <= rect2.bottom)) ||
+		  ((rect2.top <= rect1.bottom) && (rect1.bottom <= rect2.bottom))
+		);
+	}
 </script>

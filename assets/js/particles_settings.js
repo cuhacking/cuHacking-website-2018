@@ -11,13 +11,13 @@ var options = {
 			"value":"#ffffff"
 		},
 		"shape":{
-			"type":"circle",
+			"type":"polygon",
 			"stroke": {
-				"width":1,
+				"width":0,
 				"color":"#000000"
 			},
 			"polygon": {
-				"nb_sides":3
+				"nb_sides":6
 			},
 			"image": {
 				"src":"img/github.svg",
@@ -32,11 +32,12 @@ var options = {
 				"enable":false,
 				"speed":1,
 				"opacity_min":0.1,
+				"opacity_max":0.3,
 				"sync":false
 			}
 		},
 		"size":{
-			"value":2,
+			"value":4,
 			"random":true,
 			"anim":{
 				"enable":false,
