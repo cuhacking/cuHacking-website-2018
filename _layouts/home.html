@@ -14,11 +14,13 @@ layout: main_template
 	    </div>
 	</div>
 </div>
-<div class="section container dark">
+
+<div id="about" class="section container dark">
     	<h1 class="thick-title reveal">WHAT IS CUHACKING?</h1>
     	<p class="reveal">Carleton University's CUHacking is the largest hackathon in Ottawa. The hackathon takes place over 24 hours (non-stop!) Students can compete against each other and themselves to take thier projects from concept to reality.</p>
 </div>
-<div class="section container red "> <!--parallax-bg static-nodes-bg-->
+
+<div id="sponsors" class="section container red "> <!--parallax-bg static-nodes-bg-->
 		<h1 class="thick-title reveal">SPONSORS</h1>
 		
         <p class="reveal">
@@ -27,9 +29,18 @@ layout: main_template
 	        <b><a href="http://cuhacking.com/" target="_blank">Check out last year's site and sponsors!</a></b>
         </p>
 </div>
-<div class="section container med parallax-bg static-nodes-bg">
+
+<div id="faq" class="section container med parallax-bg static-nodes-bg">
 	{% include faq.html %}
 </div>
+
+
+<div id="contact" class="section container red">
+	<h1 class="contact-title"><i class="fa fa-envelope-o" aria-hidden="true" style="margin-right:15px"></i>Contact Us</h1>
+	<p class="contact-subtitle">Have a question? Use the form below and we'll get back to you ASAP.</p>
+	{% include contact-form.html %}
+</div>
+
 
 <script type="text/javascript">
 	$("#home-nav").addClass("active");
