@@ -23,6 +23,12 @@
   }
 }
 
+.btn-default:hover {
+    color: #fff !important;
+    background-color: #3c2c2c !important;
+    border-color: #302323 !important;
+}
+
 html, body{
   width: 100%;
   height: 100%;
@@ -385,6 +391,7 @@ footer {
   }
   background: black;
   padding: 40px 0px;
+  border-top: 2px solid #111111;
   .organizers {
     border-top: 1px solid #1b1515;
     padding: 20px;
