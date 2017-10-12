@@ -427,23 +427,6 @@ footer {
   margin-right:10px;
 }
 
-@media (max-width : 768px) {
-  .social-media-links.side {
-    display: none;
-  }
-  #mlh {
-    display: none;
-  }
-
-  .navbar-nav, .navbar-collapse {
-    background-color: #b05b5b;
-  }
-
-  .transparent .active a {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border-bottom: 2px solid #c28c8c !important;
-  }
-}
 
 
 
@@ -492,6 +475,25 @@ footer {
 
 .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+
+@media (max-width : 768px) {
+  .social-media-links.side {
+    display: none;
+  }
+  #mlh {
+    display: none;
+  }
+
+  .transparent .navbar-nav, .transparent .navbar-collapse {
+    background-color: #b05b5b;
+  }
+
+  .transparent .active a {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-bottom: 2px solid #c28c8c !important;
+  }
 }
 
 /*--- ACCORDION ---*/
