@@ -434,6 +434,15 @@ footer {
   #mlh {
     display: none;
   }
+
+  .navbar-nav, .navbar-collapse {
+    background-color: #b05b5b;
+  }
+
+  .transparent .active a {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-bottom: 2px solid #c28c8c !important;
+  }
 }
 
 
