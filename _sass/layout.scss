@@ -10,6 +10,18 @@
   color: #d6d6d6;//#fff;
 }
 
+.navbar-brand {
+  h1 {
+    padding:0;
+    margin:0;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}
 
 html, body{
   width: 100%;
@@ -223,19 +235,19 @@ a:active, a:focus {
 }
 
 @media (min-width: 768px){
-  h1.thick-title {
+  h2.thick-title {
     padding: 20px;
   } 
 }
-h1.thick-title {
-  font-size: 46px;
+h2.thick-title {
+  font-size:  60px;
   padding-bottom: 35px;
   margin-top: 0px;
   padding-top: 0px;
   font-weight: bold;
 }
 
-h1.thick-title.on-light{
+h2.thick-title.on-light{
   font-family: 'Archivo Black', sans-serif;
   font-size: 42px;
   color: #d6d6d6 !important;
