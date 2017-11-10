@@ -2,17 +2,19 @@
 layout: main_template
 ---
 {% include mlh.html %}
+{% include countdown.html %}
+
+
 {% include particle_bg.html %}
-<div id="centerpiece">
+<div id="home">
 	<img id="logo" class="reveal-full-size"src="{{ site.baseurl }}/assets/images/cuhlogo.png"></img>
 	<div id="join" class="reveal-full-size">
-	      {% include pre-registration.html %}
+	    {% include pre-registration.html %}
 	      <!--input type="text" class="form-control" placeholder="email">
 	      <span class="input-group-btn">
 	        <button class="go-button btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
 	      </span-->
-	    </div>
-	</div>
+    </div>
 </div>
 
 <div id="about" class="section container dark">

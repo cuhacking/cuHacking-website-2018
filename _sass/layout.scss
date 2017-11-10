@@ -108,7 +108,7 @@ a:active, a:focus {
   width: 90px;
 }
 
-#centerpiece {
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,14 +333,14 @@ h2.thick-title.on-light{
 
 /* Small Devices */
 @media (min-width : 0px) {
-  #centerpiece {
+  #home {
     height: 114vh;
   }
 }
 
 /* Ipads devices */
 @media (min-height : 1024px) {
-  #centerpiece {
+  #home {
     height: 72vh;
   }
 
@@ -351,7 +351,7 @@ h2.thick-title.on-light{
 
 /* Large Devices, Wide Screens */
 @media (min-width : 1200px) {
-  #centerpiece {
+  #home {
     height: 95vh;
   }
 
@@ -361,7 +361,7 @@ h2.thick-title.on-light{
 }
 
 @media(max-height: 560px){
-  #centerpiece {
+  #home {
     height: 750px;
   }
   .social-media-links.side {
@@ -583,7 +583,11 @@ div.card-block {
 
 
 @media (max-width:768px){
-  #centerpiece {
+  #home {
     padding-top: 105px;
   }
+}
+
+.date {
+  margin-bottom: 0px;
 }
