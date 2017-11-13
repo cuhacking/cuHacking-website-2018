@@ -13,6 +13,25 @@
     }
   }
 }
+
+@media (max-width:1080px){
+  .main-example {
+    position: fixed;
+    bottom: 0px;
+    height: 70px;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(20, 20, 20, 0.99);
+    z-index: 40000000000000;
+    padding: 13px 0;
+    border-top: 2px solid rgba(60, 9, 9, 0.61);
+    h4  {
+      display:none;
+    }
+  }
+}
+
 .main-example .countdown-container {
   height: 130px;
 }
@@ -187,14 +206,14 @@
 
 .main-example .count {
   line-height: 2.1em !important;
-  font-size: 1.2em !important;
+  font-size: 1em !important;
 }
 
 .main-example .time{
-  height: 38px !important;
-  width: 46px !important;
+  height: 30px !important;
+  width: 37px !important;
 }
 
 .main-example .label {
-  top: 38px !important;
+  top: 28px !important;
 }
