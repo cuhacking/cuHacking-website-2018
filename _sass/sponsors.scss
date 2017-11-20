@@ -10,3 +10,13 @@
     width: 17%;
     margin: 40px 5%;
 }
+
+@media (max-width: 700px){
+	.sponsor-big {
+		width: 95%;
+	}
+
+	.partner {
+	    width: 95%;
+	}
+}
