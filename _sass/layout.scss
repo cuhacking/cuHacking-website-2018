@@ -600,3 +600,10 @@ hr {
   //#f8f8f81c;
   border-top: 1px solid #f8f8f81c !important;
 }
+
+
+@media (max-width:1080px){
+  footer {
+    padding: 40px 0px 100px 0px!important;
+  }
+}
