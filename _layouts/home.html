@@ -7,7 +7,9 @@ layout: main_template
 
 {% include particle_bg.html %}
 <div id="home">
-	<img id="logo" class="reveal-full-size"src="{{ site.baseurl }}/assets/images/cuhlogo.png"></img>
+	<img id="logo" class="reveal-full-size" src="{{ site.baseurl }}/assets/images/cuhlogo.png"></img>
+
+	<h4 class="reveal-full-size location"><span><a href="http://carleton.ca/" target="_blank">@ CARLETON UNIVERSITY</a></span></h4>
 	<div id="join" class="reveal-full-size">
 	    {% include pre-registration.html %}
 	      <!--input type="text" class="form-control" placeholder="email">
@@ -28,6 +30,13 @@ layout: main_template
         <p class="reveal">
 	        By sponsoring CUHacking, your organization has the opportunity to advertise, run challenges and workshops, network with passionate students, and discover new project ideas. <b><a href="{{ site.baseurl }}/#contact" >Contact us</a></b> if your company is interested in sponsoring CUHacking!
 	        <br>
+          <!-- <b><a href="http://cuhacking.com/" target="_blank">Check out last year's site and sponsors!</a></b> -->
+        </p>
+
+	    {% include sponsors.html %}
+
+	    <p class="reveal">
+	      <a href="https://monty1029.github.io/CUHackingWebsite/" target="_blank">Check out last years sponsors!</a>
           <!-- <b><a href="http://cuhacking.com/" target="_blank">Check out last year's site and sponsors!</a></b> -->
         </p>
 </div>
