@@ -25,6 +25,7 @@
     z-index: 40000000000000;
     padding: 10px 0;
     border-top: 2px solid rgba(60,9,9,0.61);
+
     h4  {
       //float:left;
       position: fixed;
@@ -35,20 +36,25 @@
   }
 //}
 
+.main-example .countdown-container {
+  //height: 130px;
+  //padding: 15px;
+  //display:inline;
+  text-align: center;
+  margin-left: -34px;
+}
+
 @media (max-width:992px){ //tablets
   .main-example {
     h4  {
       display:none;
     }
   }
+  .countdown-container {
+    margin-left: 1px !important;
+  }
 }
 
-.main-example .countdown-container {
-  //height: 130px;
-  //padding: 15px;
-  //display:inline;
-  text-align: center;
-}
 .main-example .time {
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
