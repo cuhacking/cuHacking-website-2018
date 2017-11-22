@@ -117,7 +117,7 @@ a:active, a:focus {
     left: 0;
     right: 0;
     min-width: 100vw !important;
-    padding-top: 60px;
+    padding-top: 75px;
     background: rgba(16,16,16,0.2);
     margin-left: -5px;
 }
@@ -138,7 +138,7 @@ a:active, a:focus {
 }
 
 #logo {
-  width: 485px;//412px;
+  width: 500px;//485px;//412px;
   opacity: 0.83;
 }
 
@@ -594,6 +594,7 @@ div.card-block {
 
 .location {
   margin-left:-37px;
+  font-size: 22px !important;
 }
 
 hr {
