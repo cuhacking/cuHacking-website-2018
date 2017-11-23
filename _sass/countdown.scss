@@ -6,7 +6,7 @@
   right: 117px;
   margin-left: -10px;
   z-index: 40000000000000;
-  
+
   padding-top: 5px;
   h4  {
     margin-left: -35px;
@@ -24,7 +24,7 @@
     height: 65px;
     right: 0;
     left: 0;
-    width: 100vw;
+    width: 100vw !important;
     background: rgba(20,20,20,0.99);
     z-index: 40000000000000;
     padding: 10px 0;
@@ -206,7 +206,7 @@
 }
 @media screen and (max-width: 48em) {
   .main-example {
-    width: 100%;
+    width: 100vw;
   }
   .main-example .countdown-container {
     height: 100px;

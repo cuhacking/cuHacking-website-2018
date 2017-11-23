@@ -38,12 +38,17 @@
 		if(checkOverlappingY(nav, centerpeice)){
 			$("#menu").addClass('transparent');
 			$("#navbar-logo").removeClass('lorg-logo');
-			$("#countdown").show();
+			if(window.matchMedia('(min-width: 993px))').matches){
+				$("#countdown").show();
+			}
 			//$(".nav.navbar-nav .active a").addClass('transparent');
 		} else {
 			$("#menu").removeClass('transparent');
 			$("#navbar-logo").addClass('lorg-logo');
-			$("#countdown").hide();
+
+			if(window.matchMedia('(min-width: 993px))').matches){
+				$("#countdown").hide();
+			}
 
 			//$(".nav.navbar-nav .active a").removeClass('transparent');
 		}
