@@ -246,3 +246,23 @@
 .label  {
   font-size: 65% !important;
 }
+
+#mobile-indicator {
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 992px) {
+    #mobile-indicator {
+        display: block;
+        visibility: visible;
+    }
+
+    .countdown-container {
+      display: flex;
+      justify-content: center;
+      div {
+        margin: 0px 1px;
+      }
+    }
+}

@@ -38,7 +38,8 @@
 		if(checkOverlappingY(nav, centerpeice)){
 			$("#menu").addClass('transparent');
 			$("#navbar-logo").removeClass('lorg-logo');
-			if(window.matchMedia('(min-width: 993px))').matches){
+			console.log( $('#mobile-indicator').is(':visible') );
+			if( ! $('#mobile-indicator').is(':visible') ){
 				$("#countdown").show();
 			}
 			//$(".nav.navbar-nav .active a").addClass('transparent');
@@ -46,7 +47,7 @@
 			$("#menu").removeClass('transparent');
 			$("#navbar-logo").addClass('lorg-logo');
 
-			if(window.matchMedia('(min-width: 993px))').matches){
+			if( ! $('#mobile-indicator').is(':visible') ){
 				$("#countdown").hide();
 			}
 
