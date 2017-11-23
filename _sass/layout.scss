@@ -619,7 +619,11 @@ div.card-block {
 .location {
   margin-left:-37px;
   font-size: 22px !important;
+  a {
+    color: #eee !important;
+  }
 }
+
 
 hr {
   //#f8f8f81c;
