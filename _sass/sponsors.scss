@@ -8,18 +8,27 @@
     padding: 50px 0;
 }
 
+.plat-sponsors {
+	margin-bottom: 50px;
+}
+
 .sponsor-big {
-	width: 40%;
+	width: 32%;
+}
+
+.sponsor-bronze {
+	width: 19%;
 }
 
 .partner {
-    width: 17%;
+    width: 15%;
     margin: 40px 5%;
 }
 
 .prev-sponsor{
-	width: 7%;
+	width: 11%;
     margin: 20px 2%;
+    min-width: 100px;
 }
 
 @media (max-width: 700px){
@@ -27,7 +36,11 @@
 		width: 95%;
 	}
 
+	.sponser-bronze {
+		width: 85%;
+	}
+
 	.partner {
-	    width: 95%;
+	    width: 75%;
 	}
 }
