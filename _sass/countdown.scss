@@ -1,19 +1,20 @@
 //extracted from http://hilios.github.io/jQuery.countdown/css/main.css
-/*.main-example {
+.main-example {
   margin: 0 auto;
   width: 355px;
   position: fixed;
   right: 117px;
   margin-left: -10px;
   h4  {
+    margin-left: -35px;
     span, sup {
       color: white;
       font-weight: bold;
     }
   }
-}*/
+}
 
-//@media (max-width:1080px){
+@media (max-width:1080px){
   .main-example {
     position: fixed;
     bottom: 0px;
@@ -28,13 +29,14 @@
 
     h4  {
       //float:left;
+      margin-left: 0px;
       position: fixed;
       bottom: 13px;
       left: 10%;
       z-index: 100000000;
     }
   }
-//}
+}
 
 .main-example .countdown-container {
   //height: 130px;
@@ -57,7 +59,7 @@
 
 .main-example .time {
   border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px 0 rgba(65, 65, 65, 0.5);
   display: inline-block;
   text-align: center;
   position: relative;
@@ -89,7 +91,7 @@
   transform: translate3d(0,0,0);
 }
 .main-example .count {
-  background: #202020;
+  background: #9d152c;
   color: #f8f8f8;
   display: block;
   font-family: 'Oswald', sans-serif;

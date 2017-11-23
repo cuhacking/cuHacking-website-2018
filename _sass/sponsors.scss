@@ -1,3 +1,9 @@
+
+#sponsors {
+	a {
+		text-decoration: none !important;
+	}
+}
 .sponsors {
     padding: 50px 0;
 }
@@ -9,6 +15,11 @@
 .partner {
     width: 17%;
     margin: 40px 5%;
+}
+
+.prev-sponsor{
+	width: 7%;
+    margin: 20px 2%;
 }
 
 @media (max-width: 700px){

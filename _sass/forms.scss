@@ -7,7 +7,7 @@
 }
 #contact-button {
 	float: right;
-    background: #302323;
+    background: #810117;
     border: none;
     padding: 10px 20px;
     position: relative;
@@ -24,13 +24,13 @@
 }
 
 #contact-button:hover {
-	background: #493636;
+    background: #ac0d27;
 }
 
 .input-group-addon {
     min-width: 100px !important;
     text-align: left;
-    background: #302323;
+    background: #292929;//#810117;
     border-color: transparent;
     color: gainsboro;
     border-radius: 0px !important;
@@ -46,7 +46,7 @@
 }
 
 input[type="submit"] { 
-    background: #302323;
+    background: #810117;
     border-color: transparent;
     color: gainsboro;    
     min-height: 40px;

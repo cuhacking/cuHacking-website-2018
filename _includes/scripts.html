@@ -37,9 +37,11 @@
 	function checkNavOverCenter(){
 		if(checkOverlappingY(nav, centerpeice)){
 			$("#menu").addClass('transparent');
+			$("#navbar-logo").removeClass('lorg-logo');
 			//$(".nav.navbar-nav .active a").addClass('transparent');
 		} else {
 			$("#menu").removeClass('transparent');
+			$("#navbar-logo").addClass('lorg-logo');
 			//$(".nav.navbar-nav .active a").removeClass('transparent');
 		}
 	}
