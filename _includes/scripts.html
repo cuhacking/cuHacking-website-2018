@@ -38,10 +38,13 @@
 		if(checkOverlappingY(nav, centerpeice)){
 			$("#menu").addClass('transparent');
 			$("#navbar-logo").removeClass('lorg-logo');
+			$("#countdown").show();
 			//$(".nav.navbar-nav .active a").addClass('transparent');
 		} else {
 			$("#menu").removeClass('transparent');
 			$("#navbar-logo").addClass('lorg-logo');
+			$("#countdown").hide();
+
 			//$(".nav.navbar-nav .active a").removeClass('transparent');
 		}
 	}
@@ -68,7 +71,7 @@
 	      currDate = '00:00:00:00:00',
 	      nextDate = '00:00:00:00:00',
 	      parser = /([0-9]{2})/gi,
-	      $example = $('#main-example');
+	      $example = $('#countdown');
 	    // Parse countdown string to an object
 	    function strfobj(str) {
 	      var parsed = str.match(parser),

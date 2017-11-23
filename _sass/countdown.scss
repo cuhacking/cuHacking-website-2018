@@ -5,6 +5,9 @@
   position: fixed;
   right: 117px;
   margin-left: -10px;
+  z-index: 40000000000000;
+  
+  padding-top: 5px;
   h4  {
     margin-left: -35px;
     span, sup {
@@ -57,7 +60,7 @@
   }
 }
 
-.main-example .time {
+#countdown .time {
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(65, 65, 65, 0.5);
   display: inline-block;
@@ -90,7 +93,7 @@
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-.main-example .count {
+#countdown .count {
   background: #9d152c;
   color: #f8f8f8;
   display: block;
@@ -116,7 +119,7 @@
   -o-transform-style: flat;
   transform-style: flat;
 }
-.main-example .count.top {
+#countdown .count.top {
   border-top: 1px solid rgba(255,255,255,0.2);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   border-radius: 5px;
@@ -128,7 +131,7 @@
   -o-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
-.main-example .count.bottom {
+#countdown .count.bottom {
   background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
   background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
   background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
@@ -147,9 +150,9 @@
   -o-transform-origin: 50% 0;
   transform-origin: 50% 0;
 }
-.main-example .count.next {
+#countdown .count.next {
 }
-.main-example .label {
+#countdown .label {
   font-size: normal;
   margin-top: 5px;
   display: block;
@@ -158,7 +161,7 @@
   width: 100%;
 }
 /* Animation start */
-.main-example .count.curr.top {
+#countdown .count.curr.top {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
@@ -166,7 +169,7 @@
   transform: rotateX(0deg);
   z-index: 3;
 }
-.main-example .count.next.bottom {
+#countdown .count.next.bottom {
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   -ms-transform: rotateX(90deg);
@@ -175,7 +178,7 @@
   z-index: 2;
 }
 /* Animation end */
-.main-example .flip .count.curr.top {
+#countdown .flip .count.curr.top {
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
@@ -188,7 +191,7 @@
   -o-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-.main-example .flip .count.next.bottom {
+#countdown .flip .count.next.bottom {
   -webkit-transition: all 250ms ease-in-out 250ms;
   -moz-transition: all 250ms ease-in-out 250ms;
   -ms-transition: all 250ms ease-in-out 250ms;
@@ -208,15 +211,15 @@
   .main-example .countdown-container {
     height: 100px;
   }
-  .main-example .time {
+  #countdown .time {
       height: 70px;
       width: 48px;
   }
-  .main-example .count {
+  #countdown .count {
     font-size: 1.5em;
     line-height: 70px;
   }
-  .main-example .label {
+  #countdown .label {
     font-size: 0.8em;
     top: 72px;
   }
@@ -226,17 +229,17 @@
   height:100% !important;
 }
 
-.main-example .count {
+#countdown .count {
   line-height: 2.1em !important;
   font-size: 1em !important;
 }
 
-.main-example .time{
+#countdown .time{
   height: 30px !important;
   width: 37px !important;
 }
 
-.main-example .label {
+#countdown .label {
   top: 28px !important;
 }
 
