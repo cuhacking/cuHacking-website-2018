@@ -126,7 +126,7 @@ a:active, a:focus {
     right: 0;
     min-width: 100vw !important;
     min-height: 675px;
-    padding-top: 90px;
+    padding-top: 100px;
     background: rgba(16,16,16,0.2);
     margin-left: -5px;
     min-height: 675px;
@@ -148,9 +148,11 @@ a:active, a:focus {
 }
 
 #logo {
-  width: 550px;//485px;//412px;
+  width: 580px;//485px;//412px;
+  margin-bottom: 10px;
   opacity: 0.83;
 }
+
 
 #join {
   width: 20%;
@@ -171,6 +173,8 @@ a:active, a:focus {
   b {
     color: #eee !important;
   }
+
+
 
   .pre-register {
     width: 100% !important;
@@ -619,7 +623,7 @@ div.card-block {
 }
 
 .location {
-  margin-left:-37px;
+  margin-left:-35px;
   font-size: 22px !important;
   a {
     color: #eee !important;
@@ -682,3 +686,13 @@ footer {
     color: white !important;
   }
 }
+
+  .apply-button {
+    margin-left: -22px !important;
+    font-size: 23px !important;
+    margin-top: 15px !important;
+    padding: 7px 20px !important;
+    color: #fff !important;
+    background-color: #9f061d !important;
+    border-color: #590000 !important;
+  }
