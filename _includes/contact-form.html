@@ -17,32 +17,32 @@
         <div class="input-group">
             <span class="input-group-addon">Description</span>
             <textarea name="description" name="description" placeholder="Your message..." class="form-control" rows="4" cols="60" required></textarea>
-       </div>
-                    
-	    <input id="contact-button" type="submit" value="Send">
-	</div>
+        </div>
+        <input id="contact-button" type="submit" value="Send">
+    </div>
 </form>
 
 <script>
-var $contactForm = $("#contact-form");
-$contactForm.submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-        url: "//formspree.io/info@cuhacking.com", 
-        method: 'POST',
-        data: $(this).serialize(),
-        dataType: 'json',
-        beforeSend: function() {
-            $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-        },
-        success: function(data) {
-            $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--success"> <i style="margin-right:5px;" class="fa fa-smile-o" aria-hidden="true"></i> Message sent!</div>');
-        },
-        error: function(err) {
-            $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--error"><i style="margin-right:5px;" class="fa fa-frown-o" aria-hidden="true"></i> Oops, there was an error.</div>');
-        }
+    var $contactForm = $("#contact-form");
+    $contactForm.submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "//formspree.io/info@cuhacking.com",
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+                $contactForm.append('<div class="alert form-alert alert--loading">Sending message…</div>');
+            },
+            success: function(data) {
+                $contactForm.find('.alert--loading').hide();
+                $contactForm.append('<div class="alert form-alert alert--success"> <i style="margin-right:5px;" class="fa fa-smile-o" aria-hidden="true"></i> Message sent!</div>');
+                $contactForm.trigger("reset");
+            },
+            error: function(err) {
+                $contactForm.find('.alert--loading').hide();
+                $contactForm.append('<div class="alert form-alert alert--error"><i style="margin-right:5px;" class="fa fa-frown-o" aria-hidden="true"></i> Oops, there was an error.</div>');
+            }
+        });
     });
-});
 </script>
