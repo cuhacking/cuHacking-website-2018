@@ -517,7 +517,7 @@ footer {
   }
 
   .transparent .navbar-nav, .transparent .navbar-collapse {
-    background-color: #b05b5b;
+    //background-color: #b05b5b;
   }
 
   .transparent .active a {
@@ -705,3 +705,16 @@ footer {
     margin-left: -8px !important;
   }
 }
+
+@media (max-width:770px){
+  h2.thick-title {
+    font-size: 50px;
+  }
+}
+@media (max-width:1080px){
+  .main-example {
+    min-width: 105vw !important;
+  }
+}
+
+  
