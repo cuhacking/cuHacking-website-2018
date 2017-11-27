@@ -618,6 +618,7 @@ div.card-block {
   }
 }
 
+
 .date {
   margin-bottom: 0px;
 }
@@ -629,7 +630,6 @@ div.card-block {
     color: #eee !important;
   }
 }
-
 
 hr {
   //#f8f8f81c;
@@ -687,12 +687,21 @@ footer {
   }
 }
 
-  .apply-button {
-    margin-left: -22px !important;
-    font-size: 23px !important;
-    margin-top: 15px !important;
-    padding: 7px 20px !important;
-    color: #fff !important;
-    background-color: #9f061d !important;
-    border-color: #590000 !important;
+.apply-button {
+  margin-left: -22px !important;
+  font-size: 23px !important;
+  margin-top: 15px !important;
+  padding: 7px 20px !important;
+  color: #fff !important;
+  background-color: #9f061d !important;
+  border-color: #590000 !important;
+}
+
+@media (max-width:740px){
+  .location {
+    margin-left:-13px;
   }
+  .apply-button {
+    margin-left: -8px !important;
+  }
+}
