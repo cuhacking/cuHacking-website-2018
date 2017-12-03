@@ -9,7 +9,16 @@
 }
 
 .plat-sponsors {
+	display: flex;
+	align-items: center;
+	justify-content:center;
 	margin-bottom: 50px;
+}
+
+.other-sponsors {
+	display: flex;
+	align-items: center;
+	justify-content:center;
 }
 
 .sponsor-big {
@@ -17,8 +26,14 @@
 	margin: 10px 20px;
 }
 
+.sponsor-gold {
+	width:28%;
+	margin: 10px 20px;
+}
+
 .sponsor-bronze {
 	width: 19%;
+	margin: 10px 20px;
 }
 
 .partner {
