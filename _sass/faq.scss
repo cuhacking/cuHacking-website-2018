@@ -2,12 +2,29 @@
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
-
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 99%; */
+  /* margin: auto; */
+  justify-content: center;
   li {
     margin-bottom: 50px;
+    width: 29%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 10px 20px;
   }
 }
 
+
+@media (max-width:1280px){
+  .faq {
+    li {
+      width:90%;
+      max-width: 90%;
+    }
+  }
+}
 
 
 
