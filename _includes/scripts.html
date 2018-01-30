@@ -42,10 +42,12 @@
 			if( ! $('#mobile-indicator').is(':visible') ){
 				$("#countdown").show();
 			}
+			$("#navbar-title-header").show();
 			//$(".nav.navbar-nav .active a").addClass('transparent');
 		} else {
 			$("#menu").removeClass('transparent');
 			$("#navbar-logo").addClass('lorg-logo');
+			$("#navbar-title-header").hide();
 
 			if( ! $('#mobile-indicator').is(':visible') ){
 				$("#countdown").hide();
