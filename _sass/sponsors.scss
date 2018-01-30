@@ -24,10 +24,20 @@
 	width:28%;
 	margin: 10px 20px;
 }
+.sponsor-silver.g-spec-1 {
+	width:15%;
+}
 
 .sponsor-silver {
 	width:23%;
 	margin: 10px 20px;
+}
+
+.sponsor-silver.s-spec-1 {
+	width:12%;
+}
+.sponsor-silver.s-spec-2 {
+	width:19%;
 }
 
 .sponsor-bronze {
@@ -35,9 +45,8 @@
 	margin: 10px 20px;
 }
 
-.sponsor-bronze.smaller {
-	width: 11%;
-	margin: 10px 20px;
+.sponsor-bronze.b-spec-1 {
+	width: 10%;
 }
 
 .partner {
@@ -56,12 +65,30 @@
 		width: 90%;
 		margin-bottom:40px;
 	}
-
-	.sponsor-bronze {
-		width: 50%;
+	
+	.sponsor-gold {
+		width:85%;
+	}
+	.sponsor-silver.g-spec-1 {
+		width:60%;
+	}
+	
+	.sponsor-silver {
+		width:75%;
 	}
 
-	.sponsor-bronze.smaller {
+	.sponsor-silver.s-spec-1 {
+		width:45%;
+	}
+	.sponsor-silver.s-spec-2 {
+		width:65%;
+	}
+
+	.sponsor-bronze {
+		width: 65%;
+	}
+
+	.sponsor-bronze.b-spec-1 {
 		width: 47%;
 	}
 	
