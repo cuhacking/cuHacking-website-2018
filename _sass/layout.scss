@@ -134,7 +134,7 @@ a:active, a:focus {
 
 @media (min-width:768px){
  #logo {
-  margin-left: -20px;
+  /*margin-left: -20px;*/
  }
  #join {
   margin-left: -20px;
@@ -624,7 +624,7 @@ div.card-block {
 }
 
 .location {
-  margin-left:-35px;
+  /*margin-left:-35px;*/
   font-size: 22px !important;
   a {
     color: #eee !important;
@@ -690,7 +690,7 @@ footer {
 }
 
 .apply-button {
-  margin-left: -22px !important;
+  //margin-left: -22px !important;
   font-size: 23px !important;
   margin-top: 15px !important;
   padding: 7px 20px !important;
@@ -710,16 +710,12 @@ footer {
   }
 }
 
-.location {
-  margin-left: -30px !important;
-}
-
 @media (max-width:740px){
   .location {
-    margin-left:-13px;
+   // margin-left:-13px;
   }
   .apply-button {
-    margin-left: -8px !important;
+    //margin-left: -8px !important;
   }
 }
 
