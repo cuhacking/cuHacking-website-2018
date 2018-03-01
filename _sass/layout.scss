@@ -699,15 +699,6 @@ footer {
   border-color: #590000 !important;
 }
 
-@media (max-width:740px){
-  .location {
-    margin-left:-13px;
-  }
-  .apply-button {
-    margin-left: -8px !important;
-  }
-}
-
 @media (max-width:770px){
   h2.thick-title {
     font-size: 50px;
@@ -716,6 +707,19 @@ footer {
 @media (max-width:1080px){
   .main-example {
     min-width: 105vw !important;
+  }
+}
+
+.location {
+  margin-left: -30px !important;
+}
+
+@media (max-width:740px){
+  .location {
+    margin-left:-13px;
+  }
+  .apply-button {
+    margin-left: -8px !important;
   }
 }
 
