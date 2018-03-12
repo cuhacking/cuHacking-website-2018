@@ -20,6 +20,9 @@
 	// Customizing a reveal set
 	sr.reveal('.reveal', { reset: false, duration: 500 });
 
+	var navbarBtn = document.getElementById("navbar-btn");
+	var isMobile;
+
 
 	//On scroll check if change bg
 	//.nav.navbar-nav .active a 'background-color', 'rgba(14, 14, 14, 0.0)'
@@ -30,6 +33,7 @@
 	$(document).ready(function() {
 		checkNavOverCenter();
 		initCountDown();
+		checkIfMobile();
 	});
 
 	$(window).scroll(checkNavOverCenter);
@@ -135,5 +139,21 @@
 	        });
 	      }
 	    });
+	}
+
+	function handleNavBarBtnClick(){
+		if(isMobile && checkOverlappingY(nav, centerpeice)) {
+			console.log("Clicked");
+			$("#menu").toggleClass("transparent");
+		}
+	}
+
+	$(navbarBtn).click(handleNavBarBtnClick);
+
+	function checkIfMobile(){
+		// Taken from https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			isMobile = true;
+		}
 	}
 </script>
