@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2985" inkscape:version="0.48.3.1 r9886" sodipodi:docname="logo-sun-white.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 792"
+	 enable-background="new 0 0 612 792" xml:space="preserve">
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview2998" inkscape:current-layer="g2993" inkscape:cx="553.67158" inkscape:cy="194.24505" inkscape:pageopacity="1" inkscape:pageshadow="2" inkscape:window-height="751" inkscape:window-maximized="0" inkscape:window-width="1364" inkscape:window-x="0" inkscape:window-y="15" inkscape:zoom="1.0363436" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g id="g2993" transform="matrix(1.25,0,0,-1.25,-93.475108,542.50463)">
+	<path id="path3211" inkscape:connector-curvature="0" sodipodi:nodetypes="sccccsssccccs" d="M367.014,92.847
+		c0,26.848,21.762,48.611,48.611,48.611v0.016h35.477V123.67h-35.477c-17.02,0-30.807-13.803-30.807-30.823
+		s13.787-30.823,30.807-30.823h35.477V44.22h-35.477v0.016C388.776,44.237,367.014,65.998,367.014,92.847z"/>
+	<g id="g3025" transform="translate(0,3.0517579e-6)">
+		<path id="path3298" inkscape:connector-curvature="0" d="M92.433,161.84c0-4.836-3.92-8.756-8.756-8.756
+			c-4.836,0-8.755,3.92-8.755,8.756c0,4.836,3.92,8.755,8.755,8.755C88.513,170.596,92.433,166.676,92.433,161.84z"/>
+	</g>
+	<path id="path3211-8" inkscape:connector-curvature="0" d="M156.537,140.76c26.848,0,48.611-21.762,48.611-48.61h0.016V44.22
+		h-17.804v47.93c0,17.02-13.803,30.807-30.823,30.807c-17.02,0-30.823-13.787-30.823-30.807V44.22h-17.803v47.93h0.016
+		C107.927,118.998,129.689,140.76,156.537,140.76z"/>
+	<g id="g3002" transform="translate(11.62795,-1.0100067)">
+		<a id="a3033" xlink:href="http://www.indico.io#join" >
+			<path id="path3298-2" inkscape:connector-curvature="0" d="M339.911,162.847c0-4.836-3.919-8.756-8.755-8.756
+				c-4.836,0-8.755,3.92-8.755,8.756s3.92,8.756,8.755,8.756C335.991,171.603,339.911,167.682,339.911,162.847z"/>
+		</a>
+	</g>
+	<path id="path3001-8-9" inkscape:connector-curvature="0" d="M515.469,142.268c-27.077,0-49.032-21.955-49.032-49.032
+		c0-27.077,21.955-49.016,49.032-49.016c27.077,0,49.016,21.939,49.016,49.016C564.485,120.313,542.547,142.268,515.469,142.268z
+		 M515.469,123.216c16.556,0,29.964-13.425,29.964-29.98c0-16.555-13.409-29.98-29.964-29.98c-16.555,0-29.98,13.425-29.98,29.98
+		C485.489,109.791,498.914,123.216,515.469,123.216z M515.469,101.976c-4.818,0-8.723-3.905-8.723-8.723
+		c0-4.818,3.905-8.723,8.723-8.723c4.818,0,8.723,3.905,8.723,8.723C524.193,98.07,520.287,101.976,515.469,101.976z"/>
+	<path id="rect3178" inkscape:connector-curvature="0" d="M300.89,189.208v-58.274c-8.498,7.084-19.429,11.334-31.359,11.334
+		c-27.077,0-49.032-21.955-49.032-49.032c0-27.077,21.955-49.016,49.032-49.016c26.941,0,48.798,21.72,49.016,48.61
+		c0.001,0.136,0,0.27,0,0.405v95.973H300.89z M269.532,123.216c16.555,0,29.964-13.425,29.964-29.98
+		c0-16.555-13.409-29.98-29.964-29.98c-16.556,0-29.98,13.425-29.98,29.98C239.551,109.791,252.976,123.216,269.532,123.216z"/>
+</g>
+<rect x="0" y="366.62" width="22.244" height="120.61"/>
+<rect x="323.88" y="366.62" width="22.243" height="120.61"/>
+</svg>
