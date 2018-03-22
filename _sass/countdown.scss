@@ -1,5 +1,9 @@
+
+
+
+
 //extracted from http://hilios.github.io/jQuery.countdown/css/main.css
-.main-example {
+/*.main-example {
   margin: 0 auto;
   width: 355px;
   position: fixed;
@@ -15,7 +19,7 @@
       font-weight: bold;
     }
   }
-}
+}*/
 
 @media (max-width:1080px){
   .main-example {
@@ -37,6 +41,10 @@
       bottom: 13px;
       left: 10%;
       z-index: 100000000;
+      span, sup {
+        color: white;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -61,8 +69,8 @@
 }
 
 #countdown .time {
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(65, 65, 65, 0.5);
+  //border-radius: 5px;
+  //box-shadow: 0 0 10px 0 rgba(65, 65, 65, 0.5);
   display: inline-block;
   text-align: center;
   position: relative;
@@ -265,4 +273,26 @@
         margin: 0px 1px;
       }
     }
+}
+
+@media (min-width:1080px){
+  .big-countdown-container {
+    background: rgb(15, 2, 1);
+    width: 100vw;
+    display: block;
+    text-align: center;
+    .count.top {
+      font-size: 55px !important;
+    }
+    .time {
+      height: 114px !important;
+      width: 100px !important;
+    }
+  }
+}
+
+@media (max-width:1080px){
+  .big-countdown-container {
+    display:none;
+  }
 }
