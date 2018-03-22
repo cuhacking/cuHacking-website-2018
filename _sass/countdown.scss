@@ -279,18 +279,16 @@
      width: 100vw;
   }  
   .countdown-container {
-    background: -moz-linear-gradient(top, rgba(15,0,0,1) 0%, rgba(15,0,0,1) 36%, rgba(15,0,0,1) 72%, rgba(15,0,0,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(15,0,0,1) 0%, rgba(15,0,0,1) 36%, rgba(15,0,0,1) 72%, rgba(15,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(15,0,0,1) 0%, rgba(15,0,0,1) 36%, rgba(15,0,0,1) 72%, rgba(15,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-  
+    background:#0e0201;
     width: 100vw;
     display: block;
     text-align: center;
   }
   .count.top, #countdown .count {
     font-size: 55px !important;
+    backgroung:none !important;
   } 
+  
   #countdown .time{
       height: 114px !important;
       width: 100px !important;
