@@ -248,7 +248,7 @@
 }
 
 #countdown .label {
-  top: 100px !important;
+  top: 85px !important;
 }
 
 .label  {
@@ -284,12 +284,12 @@
     width: 100vw;
     display: block;
     text-align: center;
-    .count.top {
-      font-size: 55px !important;
-    }
-    .time {
+  }
+  .count.top, #countdown .count {
+    font-size: 55px !important;
+  } 
+  #countdown .time{
       height: 114px !important;
       width: 100px !important;
-    }
   }
 }
