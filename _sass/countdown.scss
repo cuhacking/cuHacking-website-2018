@@ -111,7 +111,7 @@
   overflow: hidden;
   position: absolute;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  //text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   top: 0;
   width: 100%;
 
@@ -128,9 +128,9 @@
   transform-style: flat;
 }
 #countdown .count.top {
-  border-top: 1px solid rgba(255,255,255,0.2);
+  /*border-top: 1px solid rgba(255,255,255,0.2);
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  border-radius: 5px;
+  border-radius: 5px;*/
   height: 50%;
 
   -webkit-transform-origin: 50% 100%;
@@ -140,14 +140,14 @@
   transform-origin: 50% 100%;
 }
 #countdown .count.bottom {
-  background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+  /*background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
   background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
   background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
   background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
   background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;*/
   line-height: 0;
   height: 50%;
   top: 50%;
