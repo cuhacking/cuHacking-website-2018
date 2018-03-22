@@ -275,8 +275,11 @@
     }
 }
 
-@media (min-width:1080px){
-  .big-countdown-container {
+@media (min-width:1081px){
+  .main-example{
+     width: 100vw;
+  }  
+  .countdown-container {
     background: rgb(15, 2, 1);
     width: 100vw;
     display: block;
@@ -288,11 +291,5 @@
       height: 114px !important;
       width: 100px !important;
     }
-  }
-}
-
-@media (max-width:1080px){
-  .big-countdown-container {
-    display:none;
   }
 }
