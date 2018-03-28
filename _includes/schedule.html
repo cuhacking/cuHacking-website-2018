@@ -6,6 +6,7 @@
     width 100%;
     padding:50px;
     color:#333;
+    flex-wrap:wrap;
    }
    .schedule-col {
     text-align: left !important;
@@ -14,10 +15,18 @@
     max-width: 500px;
     line-height: 1.9;
    }
+   .schedule-col.first{
+      margin-left:-130px;
+   }
+   @media(min-width:780px){
+      .schedule-col.first{
+         margin-left:0px;
+      }
+   }
 </style>
 <h2 class="thick-title bg">SCHEDULE</h2>
 <div class="schedule-row">
-  <ul class="schedule-col" style="margin-left:-130px; text-align: left !important;">
+  <ul class="schedule-col first" style="text-align: left !important;">
     <li><b>Saturday March 31st</b></li>
     <li>9:00am - Registration Opens</li>
     <li>10:00am - Opening Ceremonies</li>
