@@ -6,10 +6,10 @@ layout: main_template
 
 {% include particle_bg.html %}
 <div id="home">
-	<img id="logo" class="reveal-full-size" src="{{ site.baseurl }}/assets/images/official_logo.png"></img>
+	<img id="logo" class="reveal-full-size" src="{{ site.baseurl }}/assets/images/logo_text.png"></img>
 
 	<h4 class="reveal-full-size location"><span>
-		<label style="color:#eee;height: 28px;">FEBRUARY 16<sup style="margin-left:2px; color:#eee;">th</sup> - 17<sup style="color:#eee;">th</sup> 2019</label>
+		<label style="color:#eee;height: 28px;">FEBRUARY 16<sup style="margin-left:2px; color:#eee;">th</sup> - 17<sup style="color:#eee;">th</sup> {{site.year}}</label>
 		<br><a href="http://carleton.ca/" target="_blank">@ CARLETON UNIVERSITY</a></span></h4>
     {% include application_form.html %}
 	<!--div id="join" class="reveal-full-size">
@@ -23,15 +23,15 @@ layout: main_template
 
 {% include countdown.html %}
 <div id="about" class="section container to-white">
-    	<h2 class="thick-title reveal"><b>What is cuHacking?</b></h2>
-    	<p class="reveal">Carleton University's cuHacking is the largest hackathon in Ottawa. The hackathon takes place over 24 hours, non-stop! Students can compete against each other and themselves to take their projects from concept to reality.</p>
+    	<h2 class="thick-title reveal"><b>What is {{site.title}}?</b></h2>
+    	<p class="reveal">Carleton University's {{site.title}} is the largest hackathon in Ottawa. The hackathon takes place over 24 hours, non-stop! Students can compete against each other and themselves to take their projects from concept to reality.</p>
 </div>
 {% include schedule.html %}
 <h2 class="thick-title bg">SPONSORS</h2>
 <div id="sponsors" class="section container light "> <!--parallax-bg static-nodes-bg-->
 		
         <p class="reveal">
-	        By sponsoring cuHacking, your organization has the opportunity to advertise, run challenges and workshops, network with passionate students, and discover new project ideas. <b><a href="{{ site.baseurl }}/#contact" >Contact us</a></b> if your company is interested in sponsoring cuHacking!
+	        By sponsoring {{site.title}}, your organization has the opportunity to advertise, run challenges and workshops, network with passionate students, and discover new project ideas. <b><a href="{{ site.baseurl }}/#contact" >Contact us</a></b> if your company is interested in sponsoring {{site.title}}!
 	        <br>
           <!-- <b><a href="http://cuhacking.com/" target="_blank">Check out last year's site and sponsors!</a></b> -->
         </p>
