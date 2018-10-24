@@ -1,5 +1,5 @@
 # website
-CUHacking Website
+cuHacking Website
 
 To preview:
 
