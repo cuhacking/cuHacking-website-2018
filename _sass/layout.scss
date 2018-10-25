@@ -148,9 +148,9 @@ a:active, a:focus {
 }
 
 #logo {
-  width: 550px;//485px;//412px;
+  width: 550px;
   margin-bottom: 10px;
-  opacity: 0.83;
+  opacity: 0.9;
 }
 
 
@@ -445,7 +445,7 @@ footer {
 }
 
 .navbar-brand {
-  color: #d6d6d6 !important;
+  color: #000 !important;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -474,10 +474,6 @@ footer {
 }
 
 /*OVERRIDES*/
-
-.nav.navbar-nav li a {
-  color: gainsboro !important;
-}
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #dcdcdc;
