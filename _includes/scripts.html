@@ -7,9 +7,6 @@
 <!--countdown-->
 <script src="{{ site.baseurl }}/assets/js/jquery.countdown.min.js"></script>
 
-<!--FAQ-->
-<script src="{{ site.baseurl }}/assets/js/faq.js"></script>
-
 <!--Scroll loading-->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
@@ -42,7 +39,6 @@
 		if(checkOverlappingY(nav, centerpeice)){
 			$("#menu").addClass('transparent');
 			$("#navbar-logo").removeClass('lorg-logo');
-			console.log( $('#mobile-indicator').is(':visible') );
 			if( ! $('#mobile-indicator').is(':visible') ){
 				$("#countdown").show();
 			}

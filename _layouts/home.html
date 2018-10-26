@@ -6,19 +6,18 @@ layout: main_template
 
 {% include particle_bg.html %}
 <div id="home">
-	<img id="logo" class="reveal-full-size" src="{{ site.baseurl }}/assets/images/logo_text.png"></img>
+	<img id="logo" class="reveal-full-size" src="{{ site.baseurl }}/assets/img/logo_text.png"></img>
 
 	<h4 class="reveal-full-size location"><span>
-		<label style="color:#eee;height: 28px;">FEBRUARY 16<sup style="margin-left:2px; color:#eee;">th</sup> - 17<sup style="color:#eee;">th</sup> {{site.year}}</label>
+		<label>FEBRUARY 16<sup style="margin-left:2px;">th</sup> - 17<sup>th</sup> {{site.year}}</label>
 		<br><a href="http://carleton.ca/" target="_blank">@ CARLETON UNIVERSITY</a></span></h4>
     {% include application_form.html %}
-	<!--div id="join" class="reveal-full-size">
-	     pre-registration.html 
-	      <!--input type="text" class="form-control" placeholder="email">
+	<div id="join" class="reveal-full-size">
+	      <input type="text" class="form-control" placeholder="email">
 	      <span class="input-group-btn">
 	        <button class="go-button btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
 	      </span-->
-    <!--/div-->
+    </div>
 </div>
 
 {% include countdown.html %}
@@ -43,7 +42,7 @@ layout: main_template
 </div> -->
 
 <h2 class="thick-title bg">FAQ</h2>
-<div id="faq" class="section container med parallax-bg static-nodes-bg">
+<div id="faq" class="section container med">
 	{% include faq.html %}
 </div>
 
@@ -62,7 +61,5 @@ layout: main_template
 	//$("#home-nav").addClass("active");
 </script>
 
-<!--Particle js-->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!--Particle js-->
 <script src="{{ site.baseurl }}/assets/js/particles_settings.js"></script>

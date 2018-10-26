@@ -127,7 +127,6 @@ a:active, a:focus {
     min-width: 100vw !important;
     min-height: 675px;
     padding-top: 65px;
-    background: rgba(16,16,16,0.2);
     margin-left: -5px;
     min-height: 675px;
 }
@@ -232,7 +231,16 @@ a:active, a:focus {
   background: black;
 }
 
-
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 60000;
+}
 
 .lighter-section {
   background: #281e1e;
@@ -419,7 +427,7 @@ footer {
     width:134px;
     margin-bottom:15px;
   }
-  background: #fdedb2;
+  background: $primary;
   padding: 40px 0px;
   border-top: 2px solid #111111;
   .organizers {
@@ -453,12 +461,9 @@ footer {
 }
 
 #navbar-logo {
-  width:50px;
+  width:40px;
   margin-right:10px;
 }
-
-
-
 
 #menu {
   position: fixed;
@@ -622,9 +627,6 @@ div.card-block {
 .location {
   /*margin-left:-35px;*/
   font-size: 22px !important;
-  a {
-    color: #eee !important;
-  }
 }
 
 hr {

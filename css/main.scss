@@ -1,6 +1,10 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
+$primary: #fdedb2;
+$secondary: #c8102e;
+
 @import 'layout.scss';
 @import 'particle_settings.scss';
 @import 'faq.scss';
