@@ -2,9 +2,13 @@
 	<div class='plat-sponsors'></div>
 	<div class='gold-sponsors'></div>
 	<div class='other-sponsors'>
-		<a href='http://ea.com/' target='_blank'>
-			<img src='/assets/img/sponsors/ea.png' class='sponsor-silver s-spec-1'></img>
-		</a>
+		{% for sponsor in site.sponsors %}
+		{% if sponsor.tier contains 'Micro' %}
+			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-silver s-spec-1'></img>
+			</a>
+		{% endif %}
+		{% endfor %}
 	</div>
 </div>
 
@@ -16,10 +20,10 @@
 
 <div class='reveal'>
 	<hr>
-	{% for partner in site.sponsors %}
-	{% if partner.tier contains 'Partner' %}
-		<a href='{{ partner.link }}' target='_blank' title='{{ partner.name }}'>
-			<img src='/assets/img/sponsors/{{ partner.image }}' class='partner'></img>
+	{% for sponsor in site.sponsors %}
+	{% if sponsor.tier contains 'Partner' %}
+		<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+			<img src='/assets/img/sponsors/{{ sponsor.image }}' class='partner'></img>
 		</a>
 	{% endif %}
 	{% endfor %}
