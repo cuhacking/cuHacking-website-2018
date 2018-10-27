@@ -20,10 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Ottawa's largets hackathon, cuHacking!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter: https://twitter.com/cuHacking
 github:  https://github.com/cuHacking
-facebook: https://www.facebook.com/cuHacking
-instagram: https://www.instagram.com/cuHacking
 
 start_time: 2019-02-16T09:00:00
 end_time  : 2019-02-17T16:30:00
