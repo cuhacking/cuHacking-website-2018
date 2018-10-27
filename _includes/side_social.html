@@ -1,14 +1,7 @@
 <div class="social-media-links side">
-	<a href="{{site.facebook}}" target="_blank">
-		<img class="social-media-icon" src="{{site.baseurl}}/assets/img/ico/facebook.png"></img>
+	{% for social in site.socials %}
+	<a href="{{social.link}}" target="_blank" title='{{ social.name }}'>
+		<img class="social-media-icon {% if forloop.last %}last{% endif %}" src="{{site.baseurl}}/assets/img/ico/{{ social.image }}"></img>
 	</a>
-	<!-- <a href="" target="_blank">
-		<img class="social-media-icon" src="{{site.baseurl}}/assets/img/ico/slack.png"></img>
-	</a> -->
-	<a href="{{site.twitter}}" target="_blank">
-		<img class="social-media-icon" src="{{site.baseurl}}/assets/img/ico/twitter.png"></img>
-	</a>
-	<a href="{{site.instagram}}" target="_blank">
-		<img class="social-media-icon last" src="{{site.baseurl}}/assets/img/ico/instagram.png"></img>
-	</a>
+	{% endfor %}
 </div>
