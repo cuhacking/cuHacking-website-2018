@@ -33,6 +33,7 @@ end_register  : 2019-12-15T23:00:00
 
 collections:
   sponsors:
+  questions:
 
 # Build settings
 markdown: kramdown
