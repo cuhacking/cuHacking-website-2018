@@ -7,11 +7,60 @@
     <div id="register-form" class="register">
       <h4 style="color: #eee;">Interested in helping us out? Sign up to be a Volunteer!</h4>
       <a href="https://cuhacking1.typeform.com/to/OEnIvH"><button id="apply-button" class="reveal-full-size submitBtn btn go-button btn btn-default apply-button">SIGN UP</button></a>
-    </div> -->
-
-<div id="join" class="reveal-full-size">
+    </div>
+    <div id="join" class="reveal-full-size">
 	<input type="text" class="form-control" placeholder="your email here">
 	<span class="input-group-btn">
 		<button class="go-button btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
 	</span>
+</div> -->
+
+
+<div id="join" class="reveal-full-size">
+  <p style='font-size: 14px; color: #eee'>Sign up for updates from cuHacking. No spam, we promise.</p>
+  <form id="pre-register-form" class="pre-register" method="post"> 
+    <div class="input-group" style='padding-bottom: 15px;'>
+      <input type="email" class="form-control" placeholder="your email" required/>
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+          <i class="em em-incoming_envelope"></i>
+        </button>
+      </span>
+    </div>
+    <div class="form-alert alert--loading">
+      processing &hellip;
+    </div>
+    <div class="form-alert alert--success">
+      <i class="em em-smiley"></i>You are in our email list!
+    </div>
+    <div class="form-alert alert--error">
+      <i class="em em-fearful"></i>Oops, there was an error.
+    </div>
+  </form>
 </div>
+
+<script>
+
+  let $rform = $("#pre-register-form")
+  let $rloading = $rform.find('.alert--loading')
+  let $rsuccess = $rform.find('.alert--success')
+  let $rfailure = $rform.find('.alert--error')
+
+  $rform.find('.form-alert').hide()
+
+  $rform.submit(e => {
+    e.preventDefault()
+    $rloading.show()
+
+    $.post("https://formspree.io/info@cuhacking.com", $(this).serializeArray(), 'json')
+    .done(msg => {
+      $rloading.hide()
+      $rsuccess.show()
+      $rform.trigger("reset")
+    })
+    .fail((xhr, status, err) => {
+      $rloading.hide()
+      $rfailure.show()
+    })
+  })
+</script>
