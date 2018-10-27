@@ -128,9 +128,6 @@ a:active, a:focus {
 }
 
 @media (min-width:768px){
- #logo {
-  /*margin-left: -20px;*/
- }
  #join {
   margin-left: -20px;
  }
@@ -143,7 +140,7 @@ a:active, a:focus {
 }
 
 #logo {
-  width: 550px;
+  height: 35vh;
   margin-bottom: 10px;
   opacity: 0.9;
 }
@@ -326,9 +323,6 @@ h4 i.em {
 @media (max-width : 480px) {
   #join {
     width: 90%;
-  }
-  #logo {
-    width: 91%;
   }
 }
 
