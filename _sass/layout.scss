@@ -241,34 +241,6 @@ a:active, a:focus {
   background: #281e1e;
 }
 
-.static-nodes-bg {
-  background: none !important;
-  background-color: none !important;
-  //background-image: url("/assets/images/staticnodes_sparse_d.png") !important;
-  background-image: url("/assets/images/patterns/crossword.png") !important;
-  background-repeat: repeat !important;
-  filter: brightness(110%);
-}
-
-.ps-bg {
-  background-image: url("/assets/images/playstation-pattern_dark.png");
-  background-repeat: repeat;
-  filter: brightness(86%);
-}
-
-.birds-bg {
-  //filter: brightness(86%);
-  background-image: url("/assets/images/foggy_birds_@2X.svg");
-  background-repeat: repeat;
-}
-
-.darkness-bg {
-  background: none !important;
-  background-color: none !important;
-  background-image: url("/assets/images/darkness_4xd.png") !important;
-  background-repeat: repeat !important;
-}
-
 @media (min-width: 768px){
   h2.thick-title {
     padding: 20px;
