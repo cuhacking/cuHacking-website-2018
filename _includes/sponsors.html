@@ -1,28 +1,26 @@
-<div class="sponsors reveal">
-	<div class="plat-sponsors"></div>
-	<div class="gold-sponsors"></div>
-	<div class="other-sponsors">
-		<a href="http://ea.com/" target="_blank">
-			<img src="/assets/img/sponsors/ea.png" class="sponsor-silver s-spec-1"></img>
+<div class='sponsors reveal'>
+	<div class='plat-sponsors'></div>
+	<div class='gold-sponsors'></div>
+	<div class='other-sponsors'>
+		<a href='http://ea.com/' target='_blank'>
+			<img src='/assets/img/sponsors/ea.png' class='sponsor-silver s-spec-1'></img>
 		</a>
 	</div>
 </div>
 
 <br><br>
 
-<div class="reveal">
-	<h2 class="thick-title reveal">Partners</h2>
+<div class='reveal'>
+	<h2 class='thick-title reveal'>Partners</h2>
 </div>
 
-<div class="reveal">
+<div class='reveal'>
 	<hr>
-	<a href="http://mlh.io/" target="_blank">
-		<img src="/assets/img/sponsors/mlh.png" class="partner"></img>
-	</a>
-	<a href="http://carleton.ca/scs/" target="_blank">
-		<img src="/assets/img/sponsors/carleton_scs.png" class="partner"></img>
-	</a>
-	<a href="http://carleton.ca/sce/" target="_blank">
-		<img src="/assets/img/sponsors/carleton_sce.png" class="partner"></img>
-	</a>
+	{% for partner in site.sponsors %}
+	{% if partner.tier contains 'Partner' %}
+		<a href='{{ partner.link }}' target='_blank' title='{{ partner.name }}'>
+			<img src='/assets/img/sponsors/{{ partner.image }}' class='partner'></img>
+		</a>
+	{% endif %}
+	{% endfor %}
 </div>
