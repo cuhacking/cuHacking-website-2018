@@ -1,23 +1,17 @@
 ---
 layout: main_template
 ---
+
 {% include mlh.html %}
-
-
 {% include particle_bg.html %}
+
 <div id="home">
 	<img id="logo" class="reveal-full-size" src="{{ site.baseurl }}/assets/img/logo_text.png"></img>
 
 	<h4 class="reveal-full-size location"><span>
-		<label>FEBRUARY 16<sup style="margin-left:2px;">th</sup> - 17<sup>th</sup> {{site.year}}</label>
-		<br><a href="http://carleton.ca/" target="_blank">@ CARLETON UNIVERSITY</a></span></h4>
-    {% include application_form.html %}
-	<div id="join" class="reveal-full-size">
-	      <input type="text" class="form-control" placeholder="email">
-	      <span class="input-group-btn">
-	        <button class="go-button btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
-	      </span-->
-    </div>
+		<label>February 16<sup>th</sup> - 17<sup>th</sup> {{site.year}}</label>
+		<br><a href="http://carleton.ca/" target="_blank">@ Carleton University</a></span></h4>
+    {% include pre_registration.html %}
 </div>
 
 {% include countdown.html %}
@@ -25,21 +19,16 @@ layout: main_template
     	<h2 class="thick-title reveal"><b>What is {{site.title}}?</b></h2>
     	<p class="reveal">Carleton University's {{site.title}} is the largest hackathon in Ottawa. The hackathon takes place over 24 hours, non-stop! Students can compete against each other and themselves to take their projects from concept to reality.</p>
 </div>
-<!-- {% include schedule.html %}
-<h2 class="thick-title bg">SPONSORS</h2>
+<!-- {% include schedule.html %} -->
+<h2 class="thick-title bg">Sponsors</h2>
 <div id="sponsors" class="section container light ">
 		
         <p class="reveal">
 	        By sponsoring {{site.title}}, your organization has the opportunity to advertise, run challenges and workshops, network with passionate students, and discover new project ideas. <b><a href="{{ site.baseurl }}/#contact" >Contact us</a></b> if your company is interested in sponsoring {{site.title}}!
-	        <br>
         </p>
-	        <br>
 		<hr>
-	        <br>
-
-
 	    {% include sponsors.html %}
-</div> -->
+</div>
 
 <h2 class="thick-title bg">FAQ</h2>
 <div id="faq" class="section container med">
@@ -49,17 +38,12 @@ layout: main_template
 
 <div id="contact" class="section container dark">
 	<h2 class="contact-title">
-		<!--i class="em em-envelope" aria-hidden="true" style="margin-right:15px"></i-->
-		Contact Us
-	</h2><hr>
+		<i class="em em-envelope" style='margin-right: 15px;'></i>Contact Us
+	</h2>
+	<hr>
 	<p class="contact-subtitle">Have a question? Use the form below and we'll get back to you ASAP.</p>
-	{% include contact-form.html %}
+	{% include contact_form.html %}
 </div>
-
-
-<script type="text/javascript">
-	//$("#home-nav").addClass("active");
-</script>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/particles_settings.js"></script>

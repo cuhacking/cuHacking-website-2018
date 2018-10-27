@@ -1,0 +1,55 @@
+<form id='contact-form' method='POST' class='contact-form'>
+	<div class='form-group'>
+		<div class='input-group'>
+			<span class='input-group-addon'>Name</span>
+			<input name='name' type='text' placeholder='name' class='form-control' required>
+		</div>
+		<div class='input-group'>
+			<span class='input-group-addon'>Email</span>
+			<input name='email' type='email' placeholder='email' class='form-control' required>
+		</div>
+		<div class='input-group'>
+			<span class='input-group-addon'>Subject</span>
+			<input name='subject' placeholder='subject' type='text' name='subject' class='form-control' required>
+		</div>
+		<div class='input-group'>
+			<span class='input-group-addon'>Message</span>
+			<textarea name='description' name='description' placeholder='your message...' class='form-control' rows='4' cols='60' required></textarea>
+		</div>
+		<input id='contact-button' type='submit' value='Send'>
+	</div>
+
+	<!-- Email send status, all start hidden -->
+	<div class='alert form-alert alert--loading'>Sending message…</div>
+	<div class='alert form-alert alert--success'>
+		<i class='em em-smiley' aria-hidden='true'></i>Message sent!
+	</div>
+	<div class='alert form-alert alert--error'>
+		<i class='em em-fearful' aria-hidden='true'></i>Oops, there was an error.
+	</div>
+</form>
+
+<script>
+let $form = $('#contact-form')
+let $loading = $form.find('.alert--loading')
+let $success = $form.find('.alert--success')
+let $failure = $form.find('.alert--error')
+
+$form.find('.form-alert').hide()
+
+$form.submit(e => {
+	e.preventDefault()
+	$loading.show()
+
+	$.post('https://formspree.io/info@cuhacking.com', $(this).serialize(), 'json')
+	.done(msg => {
+		$loading.hide()
+		$success.show()
+		$form.trigger('reset')
+	})
+	.fail((xhr, status, err) => {
+		$loading.hide()
+		$failure.show()
+	})
+})
+</script>

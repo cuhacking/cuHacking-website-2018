@@ -1,13 +1,12 @@
 
 /*1200px 992px 768px 480px 320px*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 * {
-  font-family: 'Open Sans';
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   text-align: center;
-  color: #333;//#d6d6d6;//#fff;
+  color: #333;
 }
 
 .navbar-brand {
@@ -25,9 +24,8 @@
 
 
 .btn-default:hover {
-    color: #fff !important;
-    background-color: #a40e28 !important;
-    border-color: #a40e28 !important;
+    color: $white;
+    background-color: $secondary;
 }
 
 .btn-default:hover {
@@ -75,15 +73,13 @@ a:active, a:focus {
 }
 
 .social-media-links {
-    /* margin-right: 80px !important; */
-    /* height: 100%; */
   text-align: center;
-  position: fixed; //*absolute*/;
+  position: fixed;
   top: 38%;
   left: -4px;
   display: flex;
   padding: 15px 20px;
-  background: rgb(15, 0, 1);// rgba(131, 9, 9, 0.74);
+  background: $darkgrey;
   flex-direction: column;
   margin-top: 0;
   z-index: 70000;
@@ -154,9 +150,8 @@ a:active, a:focus {
 
 
 #join {
-  width: 20%;
-  background: rgba(35, 35, 35, 0.74);
-  //background: rgba(32, 32, 32, 0.74);
+  width: 30%;
+  background: rgba(35, 35, 35, 0.9);
   /*margin: auto;*/
   margin-top: 5px;
   padding: 15px 25px;
@@ -288,12 +283,6 @@ h2.thick-title {
   color: #222;
 }
 
-h2.thick-title.on-light{
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 42px;
-  color: #d6d6d6 !important;
-}
-
 .static:before {
   background: #1e1919;
 }
@@ -307,7 +296,9 @@ h2.thick-title.on-light{
   background-attachment: fixed !important;
 }
 
-
+h4 i.em {
+  margin-right: 9px;
+}
 
 .section {
   position: relative;
@@ -394,7 +385,7 @@ h2.thick-title.on-light{
   }
 
   #join {
-    width: 385px;
+    width: 480px;
   }
 }
 
@@ -429,7 +420,6 @@ footer {
   }
   background: $primary;
   padding: 40px 0px;
-  border-top: 2px solid #111111;
   .organizers {
     border-top: 1px solid #1b1515;
     padding: 20px;
@@ -472,7 +462,7 @@ footer {
   left:0;
 
   width: 100vw;
-  background-color: #9f021d;
+  background-color: $primary;
   z-index:50000 !important;
   border-radius: 0 !important;
   border: none !important;
@@ -642,16 +632,7 @@ hr {
 }
 
 .to-white {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db7464+0,892a2a+36,350000+72,0f0000+100 */
-
-//background: linear-gradient(to bottom, #424242 0%, #b5b5b5 36%, #d9d9d9 72%, #ffffff 100%);
-//background: -moz-linear-gradient(top, rgba(15,0,0,1) 0%, rgba(15,0,0,1) 36%, rgba(15,0,0,1) 72%, rgba(15,0,0,1) 100%); /* FF3.6-15 */
-//background: -webkit-linear-gradient(top,  rgba(15,0,0,1) 0%, rgba(15,0,0,1) 36%, rgba(15,0,0,1) 72%, rgba(15,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-//background: linear-gradient(to bottom, rgba(15,0,0,1) 0%, rgba(15,0,0,1) 36%, rgba(15,0,0,1) 72%, rgba(15,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-  
-  background:#0e0201;//#0f0000;
-  
+  background:#0e0201;  
   h2, p, b {
     color: #f2f2f2 !important; 
   }
@@ -665,21 +646,16 @@ hr {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 800;
-  color: #f2f2f2 !important;
-  background: #9f021d;
-  background: -moz-linear-gradient(top,  #9f021d 0%, #9f021d 36%, #9f021d 72%, #9f021d 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #9f021d 0%, #9f021d 36%, #9f021d 72%, #9f021d 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #9f021d 0%, #9f021d 36%, #9f021d 72%, #9f021d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f021d', endColorstr='#9f021d',GradientType=0 ); /* IE6-9 */
+  color: $white !important;
+  background: $secondary;
+  background: linear-gradient(to bottom, #9f021d 0%, #9f021d 36%, #9f021d 72%, #9f021d 100%);
 }
-
 
 .lorg-logo {
     width: 133px !important;
     margin-right: 9px !important;
     margin-top: 59px !important;
 }
-
 
 footer {
   * {

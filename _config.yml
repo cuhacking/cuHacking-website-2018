@@ -25,6 +25,12 @@ github:  https://github.com/cuHacking
 facebook: https://www.facebook.com/cuHacking
 instagram: https://www.instagram.com/cuHacking
 
+start_time: 2019-02-16T09:00:00
+end_time  : 2019-02-17T16:30:00
+
+start_register: 2019-11-02T13:00:00
+end_register  : 2019-12-15T23:00:00
+
 # Build settings
 markdown: kramdown
 plugins:

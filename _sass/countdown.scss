@@ -46,9 +46,6 @@
 }
 
 .main-example .countdown-container {
-  //height: 130px;
-  //padding: 15px;
-  //display:inline;
   text-align: center;
 }
 
@@ -64,8 +61,6 @@
 }
 
 #countdown .time {
-  //border-radius: 5px;
-  //box-shadow: 0 0 10px 0 rgba(65, 65, 65, 0.5);
   display: inline-block;
   text-align: center;
   position: relative;
@@ -100,13 +95,12 @@
   background: rgb(15,0,1);
   color: #f8f8f8;
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
   line-height: 2.4em;
   overflow: hidden;
   position: absolute;
   text-align: center;
-  //text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   top: 0;
   width: 100%;
 
@@ -237,26 +231,11 @@
   font-size: 1em !important;
 }
 
-#countdown .time{
-  //height: 30px !important;
-  //width: 37px !important;
-}
-
 .label  {
   font-size: 65% !important;
 }
 
-#mobile-indicator {
-    display: none;
-    visibility: hidden;
-}
-
 @media (max-width: 992px) {
-    #mobile-indicator {
-        display: block;
-        visibility: visible;
-    }
-
     .countdown-container {
       display: flex;
       justify-content: center;
