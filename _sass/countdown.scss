@@ -1,21 +1,4 @@
 //extracted from http://hilios.github.io/jQuery.countdown/css/main.css
-/*.main-example {
-  margin: 0 auto;
-  width: 355px;
-  position: fixed;
-  right: 117px;
-  margin-left: -10px;
-  z-index: 40000000000000;
-
-  padding-top: 5px;
-  h4  {
-    margin-left: -35px;
-    span, sup {
-      color: white;
-      font-weight: bold;
-    }
-  }
-}*/
 
 @media (max-width:1080px){
   .main-example {
@@ -129,14 +112,6 @@
   transform-origin: 50% 100%;
 }
 #countdown .count.bottom {
-  /*background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-radius: 0 0 5px 5px;*/
   line-height: 0;
   height: 50%;
   top: 50%;
