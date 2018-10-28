@@ -2,7 +2,7 @@
 layout: main_template
 ---
 
-{% include mlh.html %}
+<!-- {% include mlh.html %} -->
 {% include particle_bg.html %}
 
 <div id="home">
@@ -21,17 +21,17 @@ layout: main_template
 </div>
 <!-- {% include schedule.html %} -->
 <h2 class="thick-title bg">Sponsors</h2>
-<div id="sponsors" class="section container light ">
+<div id="sponsors" class="section container light">
 		
         <p class="reveal">
-	        By sponsoring {{site.title}}, your organization has the opportunity to advertise, run challenges and workshops, network with passionate students, and discover new project ideas. <b><a href="{{ site.baseurl }}/#contact" >Contact us</a></b> if your company is interested in sponsoring {{site.title}}!
+	        By sponsoring {{site.title}}, your organization has the opportunity to advertise, run challenges and workshops, network with passionate students, and discover new project ideas. <b><a href="mailto:{{ site.sponsor_email }}" >Contact us</a></b> if your company is interested in sponsoring {{site.title}}!
         </p>
 		<hr>
 	    {% include sponsors.html %}
 </div>
 
 <h2 class="thick-title bg">FAQ</h2>
-<div id="faq" class="section container med">
+<div id="faq" class="section container light">
 	{% include faq.html %}
 </div>
 

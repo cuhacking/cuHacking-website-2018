@@ -16,6 +16,7 @@
 title: cuHacking
 year: 2019
 email: info@cuhacking.com
+sponsor_email: sponsorship@cuhacking.com
 description: > # this means to ignore newlines until "baseurl:"
   Ottawa's largets hackathon, cuHacking!
 baseurl: "" # the subpath of your site, e.g. /blog
