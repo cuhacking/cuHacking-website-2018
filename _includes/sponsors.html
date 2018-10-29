@@ -1,139 +1,30 @@
-<div class="sponsors reveal">
-	<div class="plat-sponsors">
-		<a href="http://martellotech.com/" target="_blank">
-			<img src="/assets/images/sponsors/martellotechlogo.png" class="sponsor-big p-spec-1"></img>
-		</a>
-		<!--a href="https://www.cse-cst.gc.ca/en/homepage" target="_blank">
-			<img src="/assets/images/sponsors/cse_signature.png" class="sponsor-big"></img>
-		</a-->
-		<a href="https://innovapost.com/" target="_blank">
-			<img src="/assets/images/sponsors/innovapostlogo.png" class="sponsor-big"></img>
-		</a>
-		<a href="https://stdlib.com/" target="_blank">
-			<img src="/assets/images/sponsors/stdlib-logo-wordmark-128.png" class="sponsor-big p-spec-1"></img>
-		</a>
-	</div>
-	<div class="gold-sponsors">
-		<a href="https://kx.com/" target="_blank">
-			<img src="/assets/images/sponsors/kx.svg" class="sponsor-gold g-spec-1"></img>
-		</a>
-		<a href="https://www.ingenius.com/" target="_blank">
-			<img src="/assets/images/sponsors/i InGenius Red on Transparent 780x164.png" class="sponsor-gold p-spec-1"></img>
-		</a><br/>
-	</div>
-	<div class="other-sponsors">
-		<a href="http://fokoretail.com/" target="_blank">
-			<img src="/assets/images/sponsors/image (2).png" class="sponsor-silver s-spec-1"></img>
-		</a>
-		<a href="https://pythian.com/" target="_blank">
-			<img src="/assets/images/sponsors/logopyth.png" class="sponsor-silver s-spec-2"></img>
-		</a>
-	</div>
-	<div class="other-sponsors">
-		<a href="http://magmic.com/" target="_blank">
-			<img src="/assets/images/sponsors/magmic.png" class="sponsor-bronze"></img>
-		</a>
-		<a href="https://www.youi.tv/" target="_blank">
-			<img src="/assets/images/sponsors/youi-logo.png" class="sponsor-bronze b-spec-1"></img>
-		</a>
-		<a href="https://www.invisionapp.com/" target="_blank">
-			<img src="/assets/images/sponsors/invision-logo-pink.png" class="sponsor-bronze"></img>
-		</a>
-		<a href="https://www.wolfram.com/language/" target="_blank">
-			<img src="/assets/images/sponsors/Hackathon Logo Wolfram 2018 Vector-1.png" class="sponsor-bronze"></img>
-		</a>
-		<a href="https://indico.io/" target="_blank">
-			<img src="/assets/images/sponsors/Indico-logo-final-black.svg" class="sponsor-bronze"></img>
-		</a><br/>
-		<a href="https://get.tech/" target="_blank">
-			<img src="/assets/images/sponsors/tech_logo.png" class="sponsor-bronze"></img>
-		</a>
-		<a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
-			<img src="/assets/images/sponsors/sticker-mule-logo-light-bg.svg" class="sponsor-bronze"></img>
-		</a>
+<div class='sponsors reveal'>
+	<div class='plat-sponsors'></div>
+	<div class='gold-sponsors'></div>
+	<div class='other-sponsors'>
+		{% for sponsor in site.sponsors %}
+		{% if sponsor.tier contains 'Micro' %}
+			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-silver s-spec-1'></img>
+			</a>
+		{% endif %}
+		{% endfor %}
 	</div>
 </div>
+
 <br><br>
-<div class="reveal">
-	<!--h4><span><B>PARTNERS</B></span></h4-->
-	<h2 class="thick-title reveal">PARTNERS</h2>
+
+<div class='reveal'>
+	<h2 class='thick-title reveal'>Partners</h2>
 </div>
-<div class="reveal">
+
+<div class='reveal'>
 	<hr>
-
-	<a href="http://mlh.io/" target="_blank">
-		<img src="/assets/images/sponsors/mlh-logo-color.png" class="partner"></img>
-	</a>
-	<a href="http://github.com/" target="_blank">
-		<img src="/assets/images/sponsors/github-logo.png" class="partner"></img>
-	</a>
-	<a href="http://carleton.ca/sce/" target="_blank">
-		<img src="/assets/images/sponsors/sce-logo.png" class="partner"></img>
-	</a>
-	<a href="http://carleton.ca/scs/" target="_blank">
-		<img src="/assets/images/sponsors/carleton-compsci.png" class="partner"></img>
-	</a>
-	<a href="http://www.ieeeottawa.ca/" target="_blank">
-		<img src="assets/images/sponsors/ieeeottawa_blue.png" class="partner"></img>
-	</a>
-</div>
-
-<div class="reveal">
-	<h4 style="margin-top:50px !important"><span><B>PREVIOUS SPONSORS</B></span></h4><hr>
-</div>
-<div class="reveal">
-	<a href="http://www.martellotech.com" target="_blank">
-		<img src="assets/images/sponsors/previous/martellotechlogo.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.ieeeottawa.ca/" target="_blank">
-		<img src="assets/images/sponsors/previous/ieeeottawa_blue.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.marchnetworks.com" target="_blank">
-		<img src="assets/images/sponsors/previous/march-networks.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.realdecoy.com/home/" target="_blank">
-		<img src="assets/images/sponsors/previous/RealDecoy_logo.jpg" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.carleton.ca/scs/" target="_blank">
-		<img src="assets/images/sponsors/previous/carleton-compsci.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.carleton.ca/sce/" target="_blank">
-		<img src="assets/images/sponsors/previous/sce-logo.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.carleton.ca/engineering-design" target="_blank">
-		<img src="assets/images/sponsors/previous/fed-logo.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.indico.io/" target="_blank">
-		<img src="assets/images/sponsors/previous/indico.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.rlsolutions.com/home" target="_blank">
-		<img src="assets/images/sponsors/previous/rl-logo.jpeg" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://get.tech/" target="_blank">
-		<img src="assets/images/sponsors/previous/tech-domains-logo.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.github.com" target="_blank">
-		<img src="assets/images/sponsors/previous/github-logo.png" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.bloomberg.com" target="_blank">
-		<img src="assets/images/sponsors/previous/bloomberg-logo.svg" class="prev-sponsor"></img>
-	</a>
-
-	<a href="http://www.mlh.io" target="_blank">
-		<img src="assets/images/sponsors/previous/mlh-logo-color.png" class="prev-sponsor"></img>
-	</a>
-
-
-			<!--img class="footer-logo" src="{{ site.baseurl }}/assets/images/ccss-logo.png"></img-->
+	{% for sponsor in site.sponsors %}
+	{% if sponsor.tier contains 'Partner' %}
+		<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+			<img src='/assets/img/sponsors/{{ sponsor.image }}' class='partner'></img>
+		</a>
+	{% endif %}
+	{% endfor %}
 </div>

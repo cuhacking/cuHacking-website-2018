@@ -1,15 +1,10 @@
-<div class="main-example">
-  <!--h4><span>MARCH 31<sup style="margin-left:2px">st</sup> - APRIL 1<sup>st</sup> 2018</span></h4-->
-  <div class="countdown-container reveal-full-size" id="countdown"></div>
-</div>
-<script type="text/template" id="main-example-template">
-<div class="time <%= label %>">
-  <!--span class="count curr top"><%= curr %></span-->
-  <span class="count next top"><%= next %></span>
-  <!--span class="count next bottom"><%= next %></span>
-  <span class="count curr bottom"><%= curr %></span-->
-  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+<div class='main-example'>
+	<div id='countdown' class='countdown-container reveal-full-size'></div>
 </div>
 
-<div id="mobile-indicator"></div>
+<script id='main-example-template' type='text/template'>
+<div class='time <%= label %>'>
+  <span class='count next top'><%= next %></span>
+  <span class='label'><%= label.length < 6 ? label : label.substr(0, 3) %></span>
+</div>
 </script>

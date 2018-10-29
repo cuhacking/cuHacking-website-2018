@@ -1,14 +1,7 @@
 <div class="social-media-links side">
-	<a href="https://www.facebook.com/CUHacking/" target="_blank">
-		<img class="social-media-icon" src="{{site.baseurl}}/assets/images/ico/fbfull.png"></img>
+	{% for social in site.socials %}
+	<a href="{{social.link}}" target="_blank" title='{{ social.name }}'>
+		<img class="social-media-icon {% if forloop.last %}last{% endif %}" src="{{site.baseurl}}/assets/img/ico/{{ social.image }}"></img>
 	</a>
-	<!--a href="" target="_blank">
-		<img class="social-media-icon" src="{{site.baseurl}}/assets/images/ico/snap.png"></img>
-	</a-->
-	<a href="https://twitter.com/CuHacking" target="_blank">
-		<img class="social-media-icon" src="{{site.baseurl}}/assets/images/ico/twitterl.png"></img>
-	</a>
-	<a href="https://www.instagram.com/cuhacking/" target="_blank">
-		<img class="social-media-icon last" src="{{site.baseurl}}/assets/images/ico/Instafull.png"></img>
-	</a>
+	{% endfor %}
 </div>

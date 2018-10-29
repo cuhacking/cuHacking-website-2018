@@ -1,8 +1,8 @@
 .contact-title {
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 60px;
-    margin-top: -30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 60px;
+	margin-top: -30px;
 }
 
 .contact-subtitle {
@@ -13,18 +13,22 @@
 	padding:50px;
 	padding-bottom: 80px;
 	margin-top: 20px;
-    background: rgba(28, 28, 28, 0.52);
+	background: rgba(28, 28, 28, 0.52);
 	border-radius: 5px;
 }
 
 .form-alert {
 	color: white;
+
+	i {
+		margin-right: 5px;
+	}
 }
 
 @media (max-width:600px) {
 	.contact-form {
 		padding: 20px;
-	    padding-bottom: 80px;
+		padding-bottom: 80px;
 	}
 }
 

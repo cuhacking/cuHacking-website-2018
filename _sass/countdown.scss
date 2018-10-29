@@ -1,25 +1,4 @@
-
-
-
-
 //extracted from http://hilios.github.io/jQuery.countdown/css/main.css
-/*.main-example {
-  margin: 0 auto;
-  width: 355px;
-  position: fixed;
-  right: 117px;
-  margin-left: -10px;
-  z-index: 40000000000000;
-
-  padding-top: 5px;
-  h4  {
-    margin-left: -35px;
-    span, sup {
-      color: white;
-      font-weight: bold;
-    }
-  }
-}*/
 
 @media (max-width:1080px){
   .main-example {
@@ -50,9 +29,6 @@
 }
 
 .main-example .countdown-container {
-  //height: 130px;
-  //padding: 15px;
-  //display:inline;
   text-align: center;
 }
 
@@ -68,8 +44,6 @@
 }
 
 #countdown .time {
-  //border-radius: 5px;
-  //box-shadow: 0 0 10px 0 rgba(65, 65, 65, 0.5);
   display: inline-block;
   text-align: center;
   position: relative;
@@ -104,13 +78,12 @@
   background: rgb(15,0,1);
   color: #f8f8f8;
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
   line-height: 2.4em;
   overflow: hidden;
   position: absolute;
   text-align: center;
-  //text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   top: 0;
   width: 100%;
 
@@ -139,14 +112,6 @@
   transform-origin: 50% 100%;
 }
 #countdown .count.bottom {
-  /*background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-radius: 0 0 5px 5px;*/
   line-height: 0;
   height: 50%;
   top: 50%;
@@ -241,26 +206,11 @@
   font-size: 1em !important;
 }
 
-#countdown .time{
-  //height: 30px !important;
-  //width: 37px !important;
-}
-
 .label  {
   font-size: 65% !important;
 }
 
-#mobile-indicator {
-    display: none;
-    visibility: hidden;
-}
-
 @media (max-width: 992px) {
-    #mobile-indicator {
-        display: block;
-        visibility: visible;
-    }
-
     .countdown-container {
       display: flex;
       justify-content: center;

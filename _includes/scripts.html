@@ -1,84 +1,15 @@
-<!--FONT AWESOME ICONS-->
-<script src="https://use.fontawesome.com/b76b278215.js"></script>
-
-<!--BOOTSTRAP Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!--countdown-->
-<script src="{{ site.baseurl }}/assets/js/jquery.countdown.min.js"></script>
-
-<!--FAQ-->
-<script src="{{ site.baseurl }}/assets/js/faq.js"></script>
-
-<!--Scroll loading-->
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src='{{ site.baseurl }}/assets/js/jquery.countdown.min.js'></script>
 
 <script>
-	// Changing the defaults
-	window.sr = ScrollReveal({ reset: true }); //
-	sr.reveal('.reveal-full-size', { reset: false, scale: 1,duration: 600 });
-	// Customizing a reveal set
-	sr.reveal('.reveal', { reset: false, duration: 500 });
+	var navbarBtn = document.getElementById("navbar-btn")
 
-	var navbarBtn = document.getElementById("navbar-btn");
-	var isMobile;
+	$(document).ready(() => {
+		initCountDown()
+	})
 
-
-	//On scroll check if change bg
-	//.nav.navbar-nav .active a 'background-color', 'rgba(14, 14, 14, 0.0)'
-	//background-color: rgba(14, 14, 14, 0.0) !important; #menu
-	var nav = document.getElementById( "menu" );
-	var centerpeice = document.getElementById( "home" );
-
-	$(document).ready(function() {
-		checkNavOverCenter();
-		initCountDown();
-		checkIfMobile();
-	});
-
-	$(window).scroll(checkNavOverCenter);
-
-	function checkNavOverCenter(){
-		if(checkOverlappingY(nav, centerpeice)){
-			$("#menu").addClass('transparent');
-			$("#navbar-logo").removeClass('lorg-logo');
-			console.log( $('#mobile-indicator').is(':visible') );
-			if( ! $('#mobile-indicator').is(':visible') ){
-				$("#countdown").show();
-			}
-			$("#navbar-title-header").show();
-			//$(".nav.navbar-nav .active a").addClass('transparent');
-		} else {
-			$("#menu").removeClass('transparent');
-			$("#navbar-logo").addClass('lorg-logo');
-			$("#navbar-title-header").hide();
-
-			if( ! $('#mobile-indicator').is(':visible') ){
-				$("#countdown").hide();
-			}
-
-			//$(".nav.navbar-nav .active a").removeClass('transparent');
-		}
-	}
-
-	function checkOverlappingY(el1, el2) { //found on tutorial
-		var rect1 = el1.getBoundingClientRect();
-		var rect2 = el2.getBoundingClientRect();
-
-		return (
-		  ((rect2.top <= rect1.top) && (rect1.top <= rect2.bottom)) ||
-		  ((rect2.top <= rect1.bottom) && (rect1.bottom <= rect2.bottom))
-		);
-	}
-
-	/*$("#countdown").countdown("2018/02/10", function(event) {
-	    $(this).text(
-	      event.strftime('%D days %H:%M:%S')
-	    );
-	});*/
 	function initCountDown(){
 	    var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
-	      nextYear = '2018/03/31 09:00',
+	      nextYear = '2019/02/16 09:00',
 	      template = _.template($('#main-example-template').html()),
 	      currDate = '00:00:00:00:00',
 	      nextDate = '00:00:00:00:00',
@@ -141,19 +72,15 @@
 	    });
 	}
 
-	function handleNavBarBtnClick(){
-		if(isMobile && checkOverlappingY(nav, centerpeice)) {
+	$(navbarBtn).click(() => {
+		if(isMobile() && checkOverlappingY(nav, centerpeice)) {
 			console.log("Clicked");
 			$("#menu").toggleClass("transparent");
 		}
-	}
+	})
 
-	$(navbarBtn).click(handleNavBarBtnClick);
-
-	function checkIfMobile(){
-		// Taken from https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			isMobile = true;
-		}
+	function isMobile() {
+		// https://stackoverflow.com/questions/3514784
+		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 	}
 </script>
