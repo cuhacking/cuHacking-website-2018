@@ -1,11 +1,27 @@
 <div class='sponsors reveal'>
-	<div class='plat-sponsors'></div>
-	<div class='gold-sponsors'></div>
+	<div class='plat-sponsors'>
+		{% for sponsor in site.sponsors %}
+		{% if sponsor.tier contains 'Giga' %}
+			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-big'></img>
+			</a>
+		{% endif %}
+		{% endfor %}
+	</div>
+	<div class='gold-sponsors'>
+		{% for sponsor in site.sponsors %}
+		{% if sponsor.tier contains 'Mega' %}
+			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-gold'></img>
+			</a>
+		{% endif %}
+		{% endfor %}
+	</div>
 	<div class='other-sponsors'>
 		{% for sponsor in site.sponsors %}
 		{% if sponsor.tier contains 'Micro' %}
 			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
-				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-silver s-spec-1'></img>
+				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-bronze b-spec-1'></img>
 			</a>
 		{% endif %}
 		{% endfor %}
