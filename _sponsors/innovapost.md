@@ -1,6 +1,6 @@
 ---
 name: Innovapost
 link: https://innovapost.com/
-tier: Micro
+tier: Tera
 image: innovapost.png
 ---
