@@ -28,6 +28,15 @@
 	</div>
 	<div class='other-sponsors'>
 		{% for sponsor in site.sponsors %}
+		{% if sponsor.tier contains 'Kilo' %}
+			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
+				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-kilo'></img>
+			</a>
+		{% endif %}
+		{% endfor %}
+	</div>
+	<div class='other-sponsors'>
+		{% for sponsor in site.sponsors %}
 		{% if sponsor.tier contains 'Micro' %}
 			<a href='{{ sponsor.link }}' target='_blank' title='{{ sponsor.name }}'>
 				<img src='/assets/img/sponsors/{{ sponsor.image }}' class='sponsor-bronze b-spec-1'></img>
